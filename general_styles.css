@@ -1,0 +1,38 @@
+/* ESTILOS GENERALES DE INGRESO */
+
+.fix {
+    padding-left: 2rem;
+    /* Fixed */
+    padding-right: 2rem;
+}
+
+@media (max-width: 576px) {
+    .fix {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+.card-header {
+    background-color: #8fa0ff;
+}
+
+.form-bg {
+    box-shadow: 4px 4px 7px #D5D8DC;
+}
+
+.sizeT {
+    resize: none;
+}
+
+input,
+select,
+textarea {
+    box-shadow: 2px 2px 3px 1px #E5E7E9;
+}
+
+/* Seleccione (select color) */
+
+.select-op-color {
+    background-color: rgb(255, 199, 187);
+}
