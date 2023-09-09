@@ -27,9 +27,9 @@ if (!isset($_SESSION['nombre'])) {
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Home</title>
@@ -136,7 +136,6 @@ if (!isset($_SESSION['nombre'])) {
     </div>
 
     <!-- BOOTSTRAP -->
-
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>

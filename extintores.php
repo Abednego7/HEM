@@ -31,7 +31,6 @@ if (!isset($_SESSION['nombre'])) {
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Font Awesome -->
-
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
 

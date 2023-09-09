@@ -201,12 +201,10 @@ if (!isset($_SESSION['nombre'])) {
     <script src="js/bootstrap.min.js"></script>
 
     <!-- DataTables JS-->
-
     <script type="text/javascript" src="datatables/datatables.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <!-- SweetAlert2 CDN -->
-
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- SweetAlert2 Eliminar -->
