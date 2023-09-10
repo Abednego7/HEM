@@ -72,7 +72,6 @@ if (!isset($_SESSION['nombre'])) {
     <div class="container-fluid">
 
         <!-- MODAL -->
-
         <div class="modal fade" id="verModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -127,7 +126,7 @@ if (!isset($_SESSION['nombre'])) {
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="resolu_adjudicacion" class="col-form-label">Reso Adjudicacion</label>
+                                        <label for="resolu_adjudicacion" class="col-form-label">Reso Adjudicación</label>
                                         <input type="number" min="0" class="form-control" name="resolu_adjudicacion" id="resolu_adjudicacion" readonly>
                                     </div>
                                 </div>
@@ -160,7 +159,7 @@ if (!isset($_SESSION['nombre'])) {
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="ref_tec_1" class="col-form-label">Ref Tecnico 1</label>
+                                        <label for="ref_tec_1" class="col-form-label">Ref Técnico 1</label>
                                         <input type="text" class="form-control" name="ref_tec_1" id="ref_tec_1" readonly>
                                     </div>
                                 </div>
@@ -169,14 +168,14 @@ if (!isset($_SESSION['nombre'])) {
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="ref_tec_2" class="col-form-label">Ref Tecnico 2</label>
+                                        <label for="ref_tec_2" class="col-form-label">Ref Técnico 2</label>
                                         <input type="text" class="form-control" name="ref_tec_2" id="ref_tec_2" readonly>
                                     </div>
                                 </div>
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="ref_tec_3" class="col-form-label">Ref Tecnico 3</label>
+                                        <label for="ref_tec_3" class="col-form-label">Ref Técnico 3</label>
                                         <input type="text" class="form-control" name="ref_tec_3" id="ref_tec_3" readonly>
                                     </div>
                                 </div>
@@ -185,14 +184,14 @@ if (!isset($_SESSION['nombre'])) {
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="ref_tec_4" class="col-form-label">Ref Tecnico 4</label>
+                                        <label for="ref_tec_4" class="col-form-label">Ref Técnico 4</label>
                                         <input type="text" class="form-control" name="ref_tec_4" id="ref_tec_4" readonly>
                                     </div>
                                 </div>
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="item" class="col-form-label">Item</label>
+                                        <label for="item" class="col-form-label">Ítem</label>
                                         <input type="text" class="form-control" name="item" id="item" readonly>
                                     </div>
                                 </div>
@@ -201,14 +200,14 @@ if (!isset($_SESSION['nombre'])) {
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="acreditacion" class="col-form-label">Acreditacion</label>
+                                        <label for="acreditacion" class="col-form-label">Acreditación</label>
                                         <input type="text" class="form-control" name="acreditacion" id="acreditacion" readonly>
                                     </div>
                                 </div>
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="boleta_garanti" class="col-form-label">Boleta Garantia</label>
+                                        <label for="boleta_garanti" class="col-form-label">Boleta Garantía</label>
                                         <input type="number" min="0" class="form-control" name="boleta_garanti" id="boleta_garanti" readonly>
                                     </div>
                                 </div>
@@ -217,7 +216,7 @@ if (!isset($_SESSION['nombre'])) {
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="venci_b_gatanti" class="col-form-label">Vencimiento B.Garantia</label>
+                                        <label for="venci_b_gatanti" class="col-form-label">Vencimiento B.Garantía</label>
                                         <input type="text" class="form-control" name="venci_b_gatanti" id="venci_b_gatanti" readonly>
                                     </div>
                                 </div>
@@ -230,7 +229,6 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div>
-
         <!-- MODAL -->
 
 

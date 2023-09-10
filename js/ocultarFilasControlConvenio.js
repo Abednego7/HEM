@@ -18,7 +18,6 @@ $(document).ready(function () {
 });
 
 
-
 // Ocultar filas (con ingreso de un numero)
 $(document).ready(function () {
     $("#mostrarFilas").click(function () {
@@ -34,6 +33,7 @@ $(document).ready(function () {
         }
     });
 });
+
 
 // Borrar filas (boton)
 $(document).ready(function () {

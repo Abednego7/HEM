@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "MANTENCION") {
@@ -17,19 +17,18 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // Validacion Datos Repetidos
+        $sentenciaCV = $bd->prepare("SELECT id_control_convenio_relacion FROM control_convenio WHERE id_control_convenio_relacion = ?;");   // Compara relacion_id con la variable $id_recepcion_key
+        $sentenciaCV->execute([$id_relacion_key]);       // para ver si existe coincidencia
 
-        $sentenciaCV = $bd->prepare("SELECT id_control_convenio_relacion FROM control_convenio WHERE id_control_convenio_relacion = ?;");      // Compara relacion_id con la variable $id_recepcion_key
-        $sentenciaCV->execute([$id_relacion_key]);                                                    // para ver si existe coincidencia
+        $idsControlConvenio = $sentenciaCV->fetch(PDO::FETCH_OBJ);    // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
 
-        $idsControlConvenio = $sentenciaCV->fetch(PDO::FETCH_OBJ);      // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
-
-        if (empty($idsControlConvenio)) {                                      // VALIDA SI relacion_id ESTA VACIA
+        if (empty($idsControlConvenio)) {  // VALIDA SI relacion_id ESTA VACIA
             $sentencia = $bd->prepare("SELECT * FROM equipamiento WHERE id_relacion = ?;");
             $sentencia->execute([$id_relacion_key]);
 
             $idNew = $sentencia->fetch(PDO::FETCH_OBJ);
 
-            $termino_garantia_F = date("d-m-Y", strtotime($idNew->termino_garantia));    // ! FORMATEO DE FECHA
+            $termino_garantia_F = date("d-m-Y", strtotime($idNew->termino_garantia));    // FORMATEO DE FECHA
         } else {
             echo '<script type="text/javascript">alert("Imposible Crear Recepción: Datos Repetidos"); window.location.href="../../catastro.php";</script>';
 

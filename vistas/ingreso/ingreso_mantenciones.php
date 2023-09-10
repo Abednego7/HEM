@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "MANTENCION" || $_SESSION['tipo'] === "TECNICOS") {
@@ -18,18 +18,18 @@ if (!isset($_SESSION['nombre'])) {                                              
 
         // Validacion Datos Repetidos
 
-        $sentenciaMN = $bd->prepare("SELECT id_mantenciones_relacion FROM mantenciones WHERE id_mantenciones_relacion = ?;");      // Compara relacion_id con la variable $id_recepcion_key
-        $sentenciaMN->execute([$id_relacion_key]);                                                    // para ver si existe coincidencia
+        $sentenciaMN = $bd->prepare("SELECT id_mantenciones_relacion FROM mantenciones WHERE id_mantenciones_relacion = ?;");   // Compara relacion_id con la variable $id_recepcion_key
+        $sentenciaMN->execute([$id_relacion_key]);  // para ver si existe coincidencia
 
-        $idsMantenciones = $sentenciaMN->fetch(PDO::FETCH_OBJ);      // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
+        $idsMantenciones = $sentenciaMN->fetch(PDO::FETCH_OBJ);   // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
 
-        if (empty($idsMantenciones)) {                                      // VALIDA SI relacion_id ESTA VACIA
+        if (empty($idsMantenciones)) {
             $sentencia = $bd->prepare("SELECT * FROM equipamiento WHERE id_relacion = ?;");
             $sentencia->execute([$id_relacion_key]);
 
             $idNew = $sentencia->fetch(PDO::FETCH_OBJ);
 
-            $termino_garantia_F = date("d-m-Y", strtotime($idNew->termino_garantia));    // ! FORMATEO DE FECHA
+            $termino_garantia_F = date("d-m-Y", strtotime($idNew->termino_garantia));    // FORMATEO DE FECHA
         } else {
             header('Location: ../../mantenciones.php?result_copy=' . $id_relacion_key . '');  // En vez de enviar "1", se envia id para poder ser usada en la alerta de registro existente (mantenciones.php)
         }

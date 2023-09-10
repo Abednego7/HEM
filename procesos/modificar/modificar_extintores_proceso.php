@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "PROYECTOS" || $_SESSION['tipo'] === "MANTENCION") {
@@ -69,7 +69,7 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
 
-        //! IMPORTAR ARCHIVOS
+        // IMPORTAR ARCHIVOS
         $plano_ubicacion = $_FILES['plano_ubicacion']['name'];
         $guardardo_1 = $_FILES['plano_ubicacion']['tmp_name'];
 
@@ -93,7 +93,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-        //! CIERRE
+
     } elseif ($_SESSION['tipo'] === "TECNICOS" || $_SESSION['tipo'] === "SECRETARIA" || $_SESSION['tipo'] === "SECRETARIA GENERAL") {
         header('Location: ../../catastro.php');
     }

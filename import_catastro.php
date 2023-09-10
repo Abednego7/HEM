@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "PROYECTOS") {
@@ -19,8 +19,8 @@ if (!isset($_SESSION['nombre'])) {                                              
         // Convertir datos en array
 
         foreach ($fileContacts as $contact) {
-            $contactList[] = explode(";", $contact);                         // (" ; ") esto es el buscador de coincidencias de CSV UTF8 
-        }                                                                    // El error que tuve se provoco por estar el explode en  (",") siendo el CSV delimitado por ";"
+            $contactList[] = explode(";", $contact); // (" ; ") esto es el buscador de coincidencias de CSV UTF8 
+        }                                           // El error que tuve se provoco por estar el explode en  (",") siendo el CSV delimitado por ";"
 
 
         // Insertar datos

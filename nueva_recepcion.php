@@ -64,7 +64,7 @@ if (!isset($_SESSION['nombre'])) {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="recepcion_equipo.php">Recepcion Equipo</a>
+                            <a class="nav-link" href="recepcion_equipo.php">Recepción Equipo</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -118,7 +118,6 @@ if (!isset($_SESSION['nombre'])) {
 
 
                                             // Validacion Datos Repetidos
-
                                             $sentenciaR = $bd->prepare("SELECT relacion_id FROM recepcion WHERE relacion_id = ?;");      // Compara relacion_id con la variable $id_recepcion_key
                                             $sentenciaR->execute([$id_relacion_key]);                                                    // para ver si existe coincidencia
 

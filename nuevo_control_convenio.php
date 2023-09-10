@@ -118,13 +118,12 @@ if (!isset($_SESSION['nombre'])) {
 
 
                                             // Validacion Datos Repetidos
+                                            $sentenciaR = $bd->prepare("SELECT id_control_convenio_relacion FROM control_convenio WHERE id_control_convenio_relacion = ?;");
+                                            $sentenciaR->execute([$id_relacion_key]);
 
-                                            $sentenciaR = $bd->prepare("SELECT id_control_convenio_relacion FROM control_convenio WHERE id_control_convenio_relacion = ?;");      // Compara relacion_id con la variable $id_recepcion_key
-                                            $sentenciaR->execute([$id_relacion_key]);                                                    // para ver si existe coincidencia
+                                            $idsRecepcion = $sentenciaR->fetch(PDO::FETCH_OBJ);
 
-                                            $idsRecepcion = $sentenciaR->fetch(PDO::FETCH_OBJ);      // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
-
-                                            if (empty($idsRecepcion)) {                                      // VALIDA SI relacion_id ESTA VACIA
+                                            if (empty($idsRecepcion)) {
                                                 echo '<a href="vistas/ingreso/ingreso_control_convenio.php?id_relacion_key=' . $dato->id_relacion . '"><i class="fas fa-handshake fa-2x" style="color: firebrick;"></i></i></a>';
 
                                                 $idNew = $sentencia->fetch(PDO::FETCH_OBJ);

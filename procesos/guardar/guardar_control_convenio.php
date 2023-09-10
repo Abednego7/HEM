@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "MANTENCION") {
@@ -33,8 +33,7 @@ if (!isset($_SESSION['nombre'])) {                                              
         $peridiocidad = $_POST['peridiocidad'];
         $n_manten_preventivas = $_POST['n_manten_preventivas'];
 
-        // * MANTENCIONES
-
+        // MANTENCIONES
         $valor_mantencion_1 = $_POST['valor_mantencion_1'];
         $fecha_mantencion_1 = $_POST['fecha_mantencion_1'];
         $fecha_recep_mant_1 = $_POST['fecha_recep_mant_1'];

@@ -136,14 +136,14 @@ if (!isset($_SESSION['nombre'])) {
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="vida_util" class="col-form-label">Vida Util</label>
+                                        <label for="vida_util" class="col-form-label">Vida Útil</label>
                                         <input type="text" class="form-control" name="vida_util" id="vida_util" readonly>
                                     </div>
                                 </div>
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="vida_util_resi" class="col-form-label">Vida Util Residual</label>
+                                        <label for="vida_util_resi" class="col-form-label">Vida Útil Residual</label>
                                         <input type="text" class="form-control" name="vida_util_resi" id="vida_util_resi" readonly>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@ if (!isset($_SESSION['nombre'])) {
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="ref_tecnico" class="col-form-label">Ref Tecnico</label>
+                                        <label for="ref_tecnico" class="col-form-label">Ref Técnico</label>
                                         <input type="text" class="form-control" name="ref_tecnico" id="ref_tecnico" readonly>
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@ if (!isset($_SESSION['nombre'])) {
 
                                 <div class="form-group col">
                                     <div class="mb-3">
-                                        <label for="id_licitacion" class="col-form-label">ID Licitacion</label>
+                                        <label for="id_licitacion" class="col-form-label">ID Licitación</label>
                                         <input type="text" class="form-control" name="id_licitacion" id="id_licitacion" readonly>
                                     </div>
                                 </div>

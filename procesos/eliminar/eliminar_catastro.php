@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR") {
@@ -16,7 +16,7 @@ if (!isset($_SESSION['nombre'])) {                                              
         include '../../config/conexion.php';
 
 
-        // Validacion LLave Foranea         (POSIBLE ERROR AL SOLO PENSAR EN COMPROBACION DE RECEPCION Y NO DE CONTROL CONVENIO, ETC...)!
+        // Validacion LLave Foranea    (POSIBLE ERROR AL SOLO PENSAR EN COMPROBACION DE RECEPCION Y NO DE CONTROL CONVENIO, ETC...)!
 
         $sentencia = $bd->prepare("SELECT relacion_id FROM recepcion WHERE relacion_id = ?;");      // Compara relacion_id con la variable $id_recepcion_key
         $sentencia->execute([$id_relacion_key]);                                                    // para ver si existe coincidencia

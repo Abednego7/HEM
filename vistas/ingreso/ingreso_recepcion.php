@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "PROYECTOS") {
@@ -18,12 +18,12 @@ if (!isset($_SESSION['nombre'])) {                                              
 
         // Validacion Datos Repetidos
 
-        $sentenciaR = $bd->prepare("SELECT relacion_id FROM recepcion WHERE relacion_id = ?;");      // Compara relacion_id con la variable $id_recepcion_key
-        $sentenciaR->execute([$id_relacion_key]);                                                    // para ver si existe coincidencia
+        $sentenciaR = $bd->prepare("SELECT relacion_id FROM recepcion WHERE relacion_id = ?;");  // Compara relacion_id con la variable $id_recepcion_key
+        $sentenciaR->execute([$id_relacion_key]);   // para ver si existe coincidencia
 
-        $idsRecepcion = $sentenciaR->fetch(PDO::FETCH_OBJ);      // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
+        $idsRecepcion = $sentenciaR->fetch(PDO::FETCH_OBJ);   // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
 
-        if (empty($idsRecepcion)) {                                      // VALIDA SI relacion_id ESTA VACIA
+        if (empty($idsRecepcion)) {      // VALIDA SI relacion_id ESTA VACIA
             $sentencia = $bd->prepare("SELECT * FROM equipamiento WHERE id_relacion = ?;");
             $sentencia->execute([$id_relacion_key]);
 

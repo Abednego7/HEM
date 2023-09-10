@@ -3,7 +3,7 @@
 include 'config/conexion.php';
 
 $fileContacts = $_FILES['fileContacts'];
-$fileContacts = file_get_contents($fileContacts['tmp_name']);                       // CARGAR HASTA 103 COLUMNAS EN ESTE CASO POR SER MANTENCIONES
+$fileContacts = file_get_contents($fileContacts['tmp_name']);  // CARGAR HASTA 103 COLUMNAS EN ESTE CASO POR SER MANTENCIONES
 
 $fileContacts = explode("\n", $fileContacts);
 $fileContacts = array_filter($fileContacts);
@@ -12,8 +12,8 @@ $fileContacts = array_filter($fileContacts);
 // Convertir datos en array
 
 foreach ($fileContacts as $contact) {
-    $contactList[] = explode(";", $contact);                         // (" ; ") esto es el buscador de coincidencias de CSV UTF8 
-}                                                                    // El error que tuve se provoco por estar el explode en  (",") siendo el CSV delimitado por ";"
+    $contactList[] = explode(";", $contact);
+}
 
 
 // Insertar datos

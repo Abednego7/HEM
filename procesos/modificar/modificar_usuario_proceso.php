@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
 	header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
 	if ($_SESSION['tipo'] === "ADMINISTRADOR") {

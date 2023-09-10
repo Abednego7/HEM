@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "MANTENCION" || $_SESSION['tipo'] === "TECNICOS") {
@@ -149,7 +149,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-        // * Adjunto 2
+        // Adjunto 2
         if ($adjunto_2 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 2')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 2', 0777, true);
@@ -169,8 +169,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 3
+        // Adjunto 3
         if ($adjunto_3 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 3')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 3', 0777, true);
@@ -190,8 +189,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 4
+        // Adjunto 4
         if ($adjunto_4 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 4')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 4', 0777, true);
@@ -211,8 +209,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 5
+        // Adjunto 5
         if ($adjunto_5 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 5')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 5', 0777, true);
@@ -232,8 +229,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 6
+        // Adjunto 6
         if ($adjunto_6 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 6')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 6', 0777, true);
@@ -253,8 +249,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 7
+        // Adjunto 7
         if ($adjunto_7 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 7')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 7', 0777, true);
@@ -274,8 +269,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 8
+        // Adjunto 8
         if ($adjunto_8 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 8')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 8', 0777, true);
@@ -295,8 +289,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 9
+        // Adjunto 9
         if ($adjunto_9 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 9')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 9', 0777, true);
@@ -316,8 +309,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 10
+        // Adjunto 10
         if ($adjunto_10 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 10')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 10', 0777, true);
@@ -337,8 +329,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 11
+        // Adjunto 11
         if ($adjunto_11 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 11')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 11', 0777, true);
@@ -358,8 +349,7 @@ if (!isset($_SESSION['nombre'])) {                                              
             }
         }
 
-
-        // * Adjunto 12
+        // Adjunto 12
         if ($adjunto_12 != null) {
             if (!file_exists('../../mantenciones/' . $envioIDC . '/Adjunto 12')) {
                 mkdir('../../mantenciones/' . $envioIDC . '/Adjunto 12', 0777, true);

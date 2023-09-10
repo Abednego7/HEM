@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if (
@@ -11,7 +11,6 @@ if (!isset($_SESSION['nombre'])) {                                              
     ) {
 
         // LLAMADO DE DATOS DEL CATASTRO PARA USO EN MODAL
-
         include '../../config/conexion.php';
 
         $sentencia = $bd->query("SELECT * FROM equipamiento ORDER BY id_relacion;");

@@ -54,7 +54,7 @@ function cargarUnidades() {
 cargarSubDepto();
 
 
-// Funcion de Calculo 1
+// Funcion de Calculo
 function calculoPorCantidad() {
   var totalNetos = 0;
   var totalIvas = 0;

@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR") {
@@ -38,7 +38,7 @@ if (!isset($_SESSION['nombre'])) {                                              
     <!-- DataTables JS-->
     <link rel="stylesheet" href="datatables/datatables.min.css">
     <link rel="stylesheet" href="datatables/DataTables-1.10.25/css/dataTables.bootstrap5.min.css">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Usuarios</title>

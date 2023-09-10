@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['nombre'])) {                                                              // Sino existe la variable Session
+if (!isset($_SESSION['nombre'])) {
     header('Location: ../../index.php');
 } elseif (isset($_SESSION['nombre'])) {
     if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "SECRETARIA" || $_SESSION['tipo'] === "SECRETARIA GENERAL") {
@@ -46,7 +46,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #1
-
         $c_manager_1 = $_POST['c_manager_1'];
         $producto_1 = $_POST['producto_1'];
         $detalle_compra_1 = $_POST['detalle_compra_1'];
@@ -81,7 +80,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #2
-
         $c_manager_2 = $_POST['c_manager_2'];
         $producto_2 = $_POST['producto_2'];
         $detalle_compra_2 = $_POST['detalle_compra_2'];
@@ -116,7 +114,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #3
-
         $c_manager_3 = $_POST['c_manager_3'];
         $producto_3 = $_POST['producto_3'];
         $detalle_compra_3 = $_POST['detalle_compra_3'];
@@ -151,7 +148,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #4
-
         $c_manager_4 = $_POST['c_manager_4'];
         $producto_4 = $_POST['producto_4'];
         $detalle_compra_4 = $_POST['detalle_compra_4'];
@@ -186,7 +182,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #5
-
         $c_manager_5 = $_POST['c_manager_5'];
         $producto_5 = $_POST['producto_5'];
         $detalle_compra_5 = $_POST['detalle_compra_5'];
@@ -221,7 +216,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #6
-
         $c_manager_6 = $_POST['c_manager_6'];
         $producto_6 = $_POST['producto_6'];
         $detalle_compra_6 = $_POST['detalle_compra_6'];
@@ -256,7 +250,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #7
-
         $c_manager_7 = $_POST['c_manager_7'];
         $producto_7 = $_POST['producto_7'];
         $detalle_compra_7 = $_POST['detalle_compra_7'];
@@ -291,7 +284,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #8
-
         $c_manager_8 = $_POST['c_manager_8'];
         $producto_8 = $_POST['producto_8'];
         $detalle_compra_8 = $_POST['detalle_compra_8'];
@@ -326,7 +318,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #9
-
         $c_manager_9 = $_POST['c_manager_9'];
         $producto_9 = $_POST['producto_9'];
         $detalle_compra_9 = $_POST['detalle_compra_9'];
@@ -361,7 +352,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #10
-
         $c_manager_10 = $_POST['c_manager_10'];
         $producto_10 = $_POST['producto_10'];
         $detalle_compra_10 = $_POST['detalle_compra_10'];
@@ -396,7 +386,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #11
-
         $c_manager_11 = $_POST['c_manager_11'];
         $producto_11 = $_POST['producto_11'];
         $detalle_compra_11 = $_POST['detalle_compra_11'];
@@ -431,7 +420,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #12
-
         $c_manager_12 = $_POST['c_manager_12'];
         $producto_12 = $_POST['producto_12'];
         $detalle_compra_12 = $_POST['detalle_compra_12'];
@@ -466,7 +454,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #13
-
         $c_manager_13 = $_POST['c_manager_13'];
         $producto_13 = $_POST['producto_13'];
         $detalle_compra_13 = $_POST['detalle_compra_13'];
@@ -501,7 +488,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #14
-
         $c_manager_14 = $_POST['c_manager_14'];
         $producto_14 = $_POST['producto_14'];
         $detalle_compra_14 = $_POST['detalle_compra_14'];
@@ -536,7 +522,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #15
-
         $c_manager_15 = $_POST['c_manager_15'];
         $producto_15 = $_POST['producto_15'];
         $detalle_compra_15 = $_POST['detalle_compra_15'];
@@ -571,7 +556,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #16
-
         $c_manager_16 = $_POST['c_manager_16'];
         $producto_16 = $_POST['producto_16'];
         $detalle_compra_16 = $_POST['detalle_compra_16'];
@@ -606,7 +590,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #17
-
         $c_manager_17 = $_POST['c_manager_17'];
         $producto_17 = $_POST['producto_17'];
         $detalle_compra_17 = $_POST['detalle_compra_17'];
@@ -641,7 +624,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #18
-
         $c_manager_18 = $_POST['c_manager_18'];
         $producto_18 = $_POST['producto_18'];
         $detalle_compra_18 = $_POST['detalle_compra_18'];
@@ -676,7 +658,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #19
-
         $c_manager_19 = $_POST['c_manager_19'];
         $producto_19 = $_POST['producto_19'];
         $detalle_compra_19 = $_POST['detalle_compra_19'];
@@ -711,7 +692,6 @@ if (!isset($_SESSION['nombre'])) {                                              
 
 
         // LLAMADO DE REGISTROS DEL CATASTRO #20
-
         $c_manager_20 = $_POST['c_manager_20'];
         $producto_20 = $_POST['producto_20'];
         $detalle_compra_20 = $_POST['detalle_compra_20'];
