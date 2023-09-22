@@ -1,10 +1,10 @@
 # HEM 🏥
 Proyecto personal de Gestión De Equipos Hospitalarios (Hospital Equipment Management - HEM)
 
-¡Bienvenidos al repositorio de Gestión de Equipos Médicos del Hospital Base de Valdivia! Aquí encontrarás una demostración de la aplicación web que desarrollé durante mi tiempo en el Hospital Base de Valdivia.
+¡Bienvenidos al repositorio de Gestión de Equipos Médicos! Aquí encontrarás una demostración de la aplicación web que desarrollé durante mi tiempo en un Hospital.
 
 # 🤖 Descripción 🤖
-Durante más de un año, trabajé en estrecha colaboración con el equipo de salud del Hospital Base de Valdivia para crear una aplicación web destinada a simplificar la gestión de equipos médicos y procesos administrativos relacionados. 
+Durante más de un año, trabajé en estrecha colaboración con el equipo de salud de un Hospital para crear una aplicación web destinada a simplificar la gestión de equipos médicos y procesos administrativos relacionados. 
 Esta aplicación permitía la entrada y gestión de equipos médicos que ingresaban al hospital, así como la administración de sus respectivas mantenciones, archivos adjuntos y tareas administrativas más complejas.
 
 A lo largo del desarrollo del proyecto, se incorporaron continuamente nuevas funcionalidades para mejorar la eficiencia y la productividad en el hospital. Algunas de las características notables incluyen:
@@ -15,8 +15,8 @@ A lo largo del desarrollo del proyecto, se incorporaron continuamente nuevas fun
 
 🗂️ Generación de documentos: Simplificando la creación de informes y documentos necesarios.
 
-Es importante destacar que la versión de demostración de esta aplicación ya no se utiliza en el Hospital Base de Valdivia, y los datos mostrados en este repositorio no reflejan la información real del hospital. 
-Se han modificado los datos de ingresos, las solicitudes, los archivos PDF y muchos otros elementos para proteger la confidencialidad y la privacidad de los pacientes y el personal médico.
+Es importante destacar que la versión de demostración de esta aplicación ya no se utiliza en el Hospital en el que estuve trabajando, y los datos mostrados en este repositorio no reflejan la información real del hospital. 
+Se han modificado los datos de ingresos, las solicitudes, los archivos PDF y muchos otros elementos para proteger la confidencialidad y la privacidad del personal médico.
 
 Contenido del Repositorio
 En este repositorio, encontrarás el código fuente de la aplicación web de Gestión de Equipos Médicos, junto con documentación detallada sobre su funcionamiento y cómo implementarla en tu propio entorno si así lo deseas.
