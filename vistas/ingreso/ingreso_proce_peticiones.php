@@ -717,8 +717,7 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
-                    <!-- Modal -->
+                    <!-- INICIO MODAL -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
@@ -764,10 +763,8 @@ if (!isset($_SESSION['nombre'])) {
                             </div>
                         </div>
                     </div>
-                    <!-- Final Modal -->
+                    <!-- FIN MODAL -->
 
-
-                    <!-- Inicio Tabla -->
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
@@ -1864,7 +1861,6 @@ if (!isset($_SESSION['nombre'])) {
                             </tfoot>
                         </table>
                     </div>
-                    <!-- Termino Tabla -->
 
                     <input type="hidden" name="oculto" value="1"><br> <!-- Validacion -->
 
@@ -1878,7 +1874,6 @@ if (!isset($_SESSION['nombre'])) {
                             <a href="../../home_proceso_peticiones.php" class="btn btn-danger" style="width: 10em;">Cancelar</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </form><br><br>

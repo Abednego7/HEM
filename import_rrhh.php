@@ -10,14 +10,12 @@ $fileContacts = array_filter($fileContacts);
 
 
 // Convertir datos en array
-
 foreach ($fileContacts as $contact) {
     $contactList[] = explode(";", $contact);
 }
 
 
 // Insertar datos
-
 foreach ($contactList as $contactData) {
     $bd->query("INSERT INTO rrhh (dep_subdepto, unid_especifica, nombre, apellido_paterno, apellido_materno, rut, calidad, escalafon, grado, 
     estudio_titulo, tipo_contrato, ano_ingreso, correo, domicilio, fono_contacto, fecha_nacimiento, 

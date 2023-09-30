@@ -20,7 +20,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,7 +70,7 @@ if (!isset($_SESSION['nombre'])) {
 
     <div class="container-fluid">
 
-        <!-- MODAL -->
+        <!-- INICIO MODAL -->
         <div class="modal fade" id="verModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -81,7 +80,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                     <div class="modal-body">
                         <form>
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -97,7 +95,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -115,7 +112,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -131,7 +127,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -229,8 +224,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div>
-        <!-- MODAL -->
-
+        <!-- FIN MODAL -->
 
         <div class="container-fluid">
             <div class="row">

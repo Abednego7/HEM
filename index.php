@@ -21,7 +21,7 @@ if (isset($_SESSION['tipo'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>Iniciar Sesión</title>
@@ -181,7 +181,6 @@ if (isset($_SESSION['tipo'])) {
                 </div>
             </div>
         </div>
-
 
         <div class="wave wave1"></div>
         <div class="wave wave2"></div>

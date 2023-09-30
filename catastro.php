@@ -20,7 +20,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +58,7 @@ if (!isset($_SESSION['nombre'])) {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- -->
+                        <!-- FUTURO NAV -->
                     </ul>
                     <form class="d-flex">
                         <a href="procesos/cerrar_sesion.php" class="btn btn-outline-success">Cerrar Sesión</a>
@@ -70,8 +69,7 @@ if (!isset($_SESSION['nombre'])) {
     </header>
 
     <div class="container-fluid">
-
-        <!-- MODAL -->
+        <!-- INICIO MODAL -->
         <div class="modal fade" id="verModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -81,7 +79,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                     <div class="modal-body">
                         <form>
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -97,7 +94,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -115,7 +111,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -131,7 +126,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -197,8 +191,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div>
-        <!-- MODAL -->
-
+        <!-- FIN MODAL -->
 
         <div class="container-fluid">
             <div class="row">
@@ -212,7 +205,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div><br>
 
-            <!-- Inicio Form Import Excel -->
+            <!-- INICIO IMPORT EXCEL -->
             <?php
 
             if ($_SESSION['tipo'] === "ADMINISTRADOR" || $_SESSION['tipo'] === "PROYECTOS") {
@@ -250,14 +243,12 @@ if (!isset($_SESSION['nombre'])) {
                     });
                 }
             </script>
-            <!-- Termino Form Import Excel -->
-
+            <!-- FIN IMPORT EXCEL -->
 
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row table-responsive-sm">
                         <table id="myTable" class="table table-bordered nowrap" style="width: 100%">
-                            <!-- id="myTable" active datatables -->
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -447,8 +438,6 @@ if (!isset($_SESSION['nombre'])) {
             }).then((result) => {
                 if (result.value) {
                     document.location.href = href;
-                    // Eliminar esta linea de codigo, produce error al borrar los registros
-                    // window.location = 'catastro.php';
                 }
             })
         })

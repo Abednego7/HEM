@@ -76,6 +76,7 @@ if (!isset($_SESSION['nombre'])) {
         </div><br>
 
         <form class="form-horizontal form-bg" method="POST" action="../../procesos/modificar/modificar_extintores_proceso.php" enctype="multipart/form-data" autocomplete="off">
+            <!-- Form 1 -->
             <div class="card" id="form-1">
                 <h5 class="card-header">Modificar</h5>
                 <div class="card-body">
@@ -198,7 +199,6 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
 
-
             <!-- Form 2 -->
             <div class="card form-2" id="form-2">
                 <h5 class="card-header">Modificar</h5>
@@ -267,7 +267,6 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
 
-
             <!-- Form 3 -->
             <div class="card form-3" id="form-3">
                 <h5 class="card-header">Modificar</h5>
@@ -335,7 +334,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                 </div>
             </div>
-
 
             <!-- Form 4 -->
             <div class="card form-4" id="form-4">
@@ -414,7 +412,7 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
+                    <!-- INICIO ADJUNTAR -->
                     <div class="row">
                         <div class="form-group col">
                             <h6>Archivos:</h6>
@@ -440,11 +438,10 @@ if (!isset($_SESSION['nombre'])) {
                             ?>
                         </div>
                     </div><br>
-
+                    <!-- FIN ADJUNTAR -->
 
                     <input type="hidden" name="oculto" value="1"> <!-- Validacion -->
                     <input type="hidden" name="envioID" value="<?php echo $idNew->id_extintor; ?>">
-
 
                     <div class="form-group d-flex justify-content-center">
                         <div class="col-sm-offset-2 col-sm-10 d-flex justify-content-center">

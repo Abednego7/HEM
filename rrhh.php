@@ -24,7 +24,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -87,8 +86,7 @@ if (!isset($_SESSION['nombre'])) {
             </div><br>
 
 
-            <!-- Inicio Form Import Excel -->
-
+            <!-- INICIO IMPORT EXCEL -->
             <form action="files.php" method="post" enctype="multipart/form-data" id="filesForm">
                 <div class="row">
                     <div class="form-group col">
@@ -115,11 +113,8 @@ if (!isset($_SESSION['nombre'])) {
                         }
                     });
                 }
-            </script>
-
-            <!-- Termino Form Import Excel -->
-
-            <br><br>
+            </script><br><br>
+            <!-- FIN IMPORT EXCEL -->
 
             <div class="row">
                 <div class="col-lg-12">

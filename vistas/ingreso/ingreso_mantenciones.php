@@ -85,6 +85,7 @@ if (!isset($_SESSION['nombre'])) {
             <h3 style="text-align:center; margin-top: 20px;">Ingreso Mantenciones</h3>
         </div><br>
 
+        <!-- INICIO ACCORDION -->
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
@@ -140,6 +141,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div><br>
+        <!-- FIN ACCORDION -->
 
         <form class="form-horizontal form-bg" method="POST" action="../../procesos/guardar/guardar_mantenciones.php" enctype="multipart/form-data" autocomplete="off">
             <div class="card">
@@ -157,14 +159,12 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="ubicacion" class="col-sm-2 control-label">Ubicación</label>
                             <input type="text" class="form-control" id="ubicacion" name="ubicacion" placeholder="Ubicacion" required>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -188,7 +188,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="id_licitacion_convenio" class="col-sm-2 control-label">ID Lici Convenio</label>
@@ -200,7 +199,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="text" class="form-control" id="empresa_adjudicada" name="empresa_adjudicada" placeholder="Empresa Adjudicada" required>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -218,7 +216,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="text" class="form-control" id="duracion_en_meses" name="duracion_en_meses" readonly>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -245,8 +242,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
-                    <!-- Inicio Tabla -->
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
@@ -403,8 +398,6 @@ if (!isset($_SESSION['nombre'])) {
                             </tbody>
                         </table>
                     </div>
-                    <!-- Termino Tabla -->
-
 
                     <!-- Validacion -->
                     <input type="hidden" name="oculto" value="1">
@@ -423,12 +416,10 @@ if (!isset($_SESSION['nombre'])) {
         </form><br><br>
     </div>
 
-
     <script type="text/javascript" src="../../js/calculoMeses.js"></script>
 
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-
 
     <script type="text/javascript" src="../../js/main.js"></script>
 

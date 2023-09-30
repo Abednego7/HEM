@@ -10,14 +10,12 @@ $fileContacts = array_filter($fileContacts);
 
 
 // Convertir datos en array
-
 foreach ($fileContacts as $contact) {
     $contactList[] = explode(";", $contact);
 }
 
 
 // Insertar datos
-
 foreach ($contactList as $contactData) {
     $bd->query("INSERT INTO extintores (cod_nui, n_inventario, recinto, edificio, piso, sala_pasillo, servicio_usuario, sector, tipo_extintor, kg, fecha_mantencion, estado, preg_nanometro, 
     preg_certificacion, preg_sello_garantia, preg_ident_cilindro, preg_mants_vigentes, preg_lugar_visible, preg_senaletica_ubic, preg_facil_acceso, preg_altura_no_mayor, preg_etiqueta_frontal, 

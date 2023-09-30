@@ -23,7 +23,7 @@ if (!isset($_SESSION['nombre'])) {
 
         $idsRecepcion = $sentenciaR->fetch(PDO::FETCH_OBJ);   // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
 
-        if (empty($idsRecepcion)) {      // VALIDA SI relacion_id ESTA VACIA
+        if (empty($idsRecepcion)) {
             $sentencia = $bd->prepare("SELECT * FROM equipamiento WHERE id_relacion = ?;");
             $sentencia->execute([$id_relacion_key]);
 
@@ -157,7 +157,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="resolucion_adjudicacion" class="col-sm-2 control-label">Resolu Adjudicación</label>
@@ -169,7 +168,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="date" class="form-control" id="fecha_de_adjudi" name="fecha_de_adjudi" required>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -546,7 +544,6 @@ if (!isset($_SESSION['nombre'])) {
             <div class="card form-4" id="form-4">
                 <h5 class="card-header">Ingreso</h5>
                 <div class="card-body">
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="accesorio_5" class="col-sm-2 control-label">Accesorio 5</label>

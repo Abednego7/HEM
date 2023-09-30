@@ -22,7 +22,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,7 +71,6 @@ if (!isset($_SESSION['nombre'])) {
     </header>
 
     <div class="container-fluid">
-
         <div class="container-fluid">
             <div class="row">
                 <h2 style="text-align:center; margin-top: 20px;">PROCESO ADMINISTRATIVO</h2>

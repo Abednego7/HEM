@@ -74,11 +74,6 @@ if (!isset($_SESSION['nombre'])) {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <!-- 
-                        <li class="nav-item">
-                            <a class="nav-link active" href="recepcion_equipo.php">Recepción Equipo</a>
-                        </li>
-                        -->
                     </ul>
                     <form class="d-flex">
                         <a href="procesos/cerrar_sesion.php" class="btn btn-outline-success">Cerrar Sesión</a>
@@ -92,7 +87,7 @@ if (!isset($_SESSION['nombre'])) {
             <h2 style="text-align:center; margin-top: 20px;">RECEPCIÓN DE EQUIPOS</h2>
         </div><br><br>
 
-        <!--  MODAL -->
+        <!--  INICIO MODAL -->
         <div class="modal fade" id="verModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -134,8 +129,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -158,8 +151,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -207,8 +198,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -231,8 +220,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -257,8 +244,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -281,8 +266,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -307,8 +290,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -331,8 +312,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -357,8 +336,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -381,8 +358,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -407,8 +382,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -432,8 +405,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -449,7 +420,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -474,7 +444,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -497,7 +466,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -522,7 +490,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -546,7 +513,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div>
-        <!-- MODAL -->
+        <!-- FIN MODAL -->
 
         <div class="container-fluid">
             <div class="row">

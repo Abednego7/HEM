@@ -41,4 +41,4 @@ Además de esos pasos no necesitarás nada más por ahora.
 * FPDF
 * MySQL
 
-¡Gracias por visitar mi repositorio de demostración! Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.
+¡Gracias por visitar mi repositorio de demostración! Si tienes alguna pregunta o necesitas más información, no dudes en contactarme.

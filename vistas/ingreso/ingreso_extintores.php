@@ -67,6 +67,7 @@ if (!isset($_SESSION['nombre'])) {
         </div><br>
 
         <form class="form-horizontal form-bg" method="POST" action="../../procesos/guardar/guardar_extintores.php" autocomplete="off">
+            <!-- Form 1 -->
             <div class="card" id="form-1">
                 <h5 class="card-header">Ingreso</h5>
                 <div class="card-body">
@@ -82,7 +83,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="recinto" class="col-sm-2 control-label">Recinto</label>
@@ -94,7 +94,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="text" class="form-control" id="servicio_usuario" name="servicio_usuario" placeholder="Servicio Usuario" required>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -147,7 +146,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="sector" class="col-sm-2 control-label">Sector</label>
@@ -159,7 +157,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="text" class="form-control" id="tipo_extintor" name="tipo_extintor" placeholder="Tipo Extintor" required>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -182,7 +179,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="form-group d-flex justify-content-center">
                         <div class="col-sm-offset-2 col-sm-10 d-flex justify-content-center">
                             <button type="button" id="myForm1" class="btn btn-success" style="width: 10em;">Siguiente</button>
@@ -190,7 +186,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                 </div>
             </div>
-
 
             <!-- Form 2 -->
             <div class="card form-2" id="form-2">
@@ -207,7 +202,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="preg_certificacion" class="col-sm-2 control-label">¿El extintor esta certificado?</label>
@@ -218,7 +212,6 @@ if (!isset($_SESSION['nombre'])) {
                             </select>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -231,7 +224,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="preg_ident_cilindro" class="col-sm-2 control-label">¿La etiqueta de identificacion del cilindro corresponde con el tipo del extintor: Clase A, B, C, D, K?</label>
@@ -242,7 +234,6 @@ if (!isset($_SESSION['nombre'])) {
                             </select>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -255,7 +246,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="form-group d-flex justify-content-center">
                         <div class="col-sm-offset-2 col-sm-10 d-flex justify-content-center">
                             <button type="button" id="myForm2At" class="btn btn-primary" style="width: 10em; margin-right: 1em;">Anterior</button>
@@ -264,7 +254,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                 </div>
             </div>
-
 
             <!-- Form 3 -->
             <div class="card form-3" id="form-3">
@@ -280,7 +269,6 @@ if (!isset($_SESSION['nombre'])) {
                             </select>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -304,7 +292,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="preg_altura_no_mayor" class="col-sm-2 control-label">¿El extintor se encuentra en una altura no mayor de 1,30 MTS desde la base de este al suelo?</label>
@@ -315,7 +302,6 @@ if (!isset($_SESSION['nombre'])) {
                             </select>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -328,7 +314,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="form-group d-flex justify-content-center">
                         <div class="col-sm-offset-2 col-sm-10 d-flex justify-content-center">
                             <button type="button" id="myForm3At" class="btn btn-primary" style="width: 10em; margin-right: 1em;">Anterior</button>
@@ -337,7 +322,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                 </div>
             </div>
-
 
             <!-- Form 4 -->
             <div class="card form-4" id="form-4">
@@ -365,7 +349,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="preg_pintura" class="col-sm-2 control-label">¿La pintura del cilindro esta en buenas condiciones?</label>
@@ -388,7 +371,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="preg_etiqueta_posterior" class="col-sm-2 control-label">¿El extintor cuenta con la etiqueta posterior, con la informacion minima segun DS 44?</label>
@@ -399,7 +381,6 @@ if (!isset($_SESSION['nombre'])) {
                             </select>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">

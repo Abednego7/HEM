@@ -22,7 +22,7 @@ if (!isset($_SESSION['nombre'])) {
 
         $idsControlConvenio = $sentenciaCV->fetch(PDO::FETCH_OBJ);    // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
 
-        if (empty($idsControlConvenio)) {  // VALIDA SI relacion_id ESTA VACIA
+        if (empty($idsControlConvenio)) {
             $sentencia = $bd->prepare("SELECT * FROM equipamiento WHERE id_relacion = ?;");
             $sentencia->execute([$id_relacion_key]);
 
@@ -86,6 +86,7 @@ if (!isset($_SESSION['nombre'])) {
             <h3 style="text-align:center; margin-top: 20px;">Ingreso Control Convenio</h3>
         </div><br>
 
+        <!-- INICIO ACCORDION -->
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
@@ -141,6 +142,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div><br>
+        <!-- FIN ACCORDION -->
 
         <form class="form-horizontal form-bg" method="POST" action="../../procesos/guardar/guardar_control_convenio.php" autocomplete="off">
             <div class="card">
@@ -306,8 +308,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
-                    <!-- Inicio Tabla -->
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
@@ -612,8 +612,6 @@ if (!isset($_SESSION['nombre'])) {
                             </tbody>
                         </table>
                     </div>
-                    <!-- Termino Tabla -->
-
 
                     <!-- Validacion -->
                     <input type="hidden" name="oculto" value="1">
@@ -632,12 +630,10 @@ if (!isset($_SESSION['nombre'])) {
         </form><br><br>
     </div>
 
-
     <script type="text/javascript" src="../../js/calculoMeses.js"></script>
 
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-
 
     <script type="text/javascript" src="../../js/main.js"></script>
 

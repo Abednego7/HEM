@@ -101,8 +101,6 @@ if (!isset($_SESSION['nombre'])) {
         $pdf->SetX(-65);
         $pdf->Cell(10, 20, utf8_decode('CONVENIO SI PROCEDE: '));
         $pdf->SetFont('Arial', 'B', 8);
-        # $pdf->SetX(-18);
-        # $pdf->cell(10, 20, $idNew->solici_de_compra, 0, 0, 'R', 0);
 
 
         $pdf->SetY(60);

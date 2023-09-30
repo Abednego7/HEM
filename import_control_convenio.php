@@ -3,21 +3,19 @@
 include 'config/conexion.php';
 
 $fileContacts = $_FILES['fileContacts'];
-$fileContacts = file_get_contents($fileContacts['tmp_name']);  // CARGAR HASTA 103 COLUMNAS EN ESTE CASO POR SER MANTENCIONES
+$fileContacts = file_get_contents($fileContacts['tmp_name']);
 
 $fileContacts = explode("\n", $fileContacts);
 $fileContacts = array_filter($fileContacts);
 
 
 // Convertir datos en array
-
 foreach ($fileContacts as $contact) {
     $contactList[] = explode(";", $contact);
 }
 
 
 // Insertar datos
-
 foreach ($contactList as $contactData) {
     $bd->query("INSERT INTO control_convenio (ejecutivo_compra, correo_ejecutivo, edificio, piso, sala_pasillo, responsable, correo_responsable, 
     grupo, id_licitacion_convenio, empresa_adjudicada, equipo_critico_m_c, ubicacion, fecha_inicio_convenio, fecha_termino_convenio, 

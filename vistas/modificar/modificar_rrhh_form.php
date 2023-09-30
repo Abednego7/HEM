@@ -31,8 +31,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,7 +128,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="text" class="form-control" maxlength="12" id="rut" name="rut" value="<?php echo $idNew->rut; ?>" placeholder="00.000.000-k" required>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -240,7 +237,6 @@ if (!isset($_SESSION['nombre'])) {
 
                     <input type="hidden" name="oculto" value="1"> <!-- Validacion -->
                     <input type="hidden" name="envioID" value="<?php echo $idNew->id_rrhh; ?>">
-
 
                     <div class="form-group d-flex justify-content-center">
                         <div class="col-sm-offset-2 col-sm-10 d-flex justify-content-center">

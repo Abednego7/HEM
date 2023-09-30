@@ -18,7 +18,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 

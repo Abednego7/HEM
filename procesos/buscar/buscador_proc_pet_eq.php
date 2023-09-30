@@ -9,7 +9,7 @@ $nums = count($numero);     // Conteo de registros iguales a la variable de busq
 
 foreach ($numero as $datos);
 
-if (empty($_POST["buscar"])) {          // Evalua si la variable post "buscar" esta vacia
+if (empty($_POST["buscar"])) {
     echo "";
 } else {
     if ($nums > 0) {

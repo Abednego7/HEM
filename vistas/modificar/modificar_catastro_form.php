@@ -74,6 +74,7 @@ if (!isset($_SESSION['nombre'])) {
         </div><br>
 
         <form class="form-horizontal form-bg" method="POST" action="../../procesos/modificar/modificar_catastro_proceso.php" autocomplete="off">
+            <!-- Form 1 -->
             <div class="card" id="form-1">
                 <h5 class="card-header">Modificar</h5>
                 <div class="card-body">
@@ -245,7 +246,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="sector" class="col-sm-2 control-label">Sector</label>
@@ -271,7 +271,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="subclase" class="col-sm-2 control-label">Sub Clase</label>
@@ -293,7 +292,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="equipo" class="col-sm-2 control-label">Equipo</label>
@@ -305,7 +303,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca" value="<?php echo $idNew->marca; ?>">
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -319,14 +316,12 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="valor" class="col-sm-2 control-label">Valor</label>
                             <input type="number" class="form-control" id="valor" name="valor" placeholder="Valor" value="<?php echo $idNew->valor; ?>">
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -340,7 +335,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="form-group d-flex justify-content-center">
                         <div class="col-sm-offset-2 col-sm-10 d-flex justify-content-center">
                             <button type="button" id="myForm1" class="btn btn-primary" style="width: 10em;">Siguiente</button>
@@ -349,7 +343,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
 
-
+            <!-- Form 2 -->
             <div class="card form-2" id="form-2">
                 <h5 class="card-header">Modificar</h5>
                 <div class="card-body">
@@ -364,7 +358,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="number" class="form-control" id="vida_util_residual" name="vida_util_residual" placeholder="Vida Util Residual" value="<?php echo $idNew->vida_util_residual; ?>">
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -382,7 +375,6 @@ if (!isset($_SESSION['nombre'])) {
                             </select>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -415,7 +407,6 @@ if (!isset($_SESSION['nombre'])) {
                             </select>
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">
@@ -459,7 +450,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="ref_tecnico" class="col-sm-2 control-label">Ref Tecnico</label>
@@ -487,7 +477,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
                     <div class="row">
                         <div class="form-group col">
                             <label for="id_licitacion" class="col-sm-2 control-label">ID Licitacion</label>
@@ -499,7 +488,6 @@ if (!isset($_SESSION['nombre'])) {
                             <input type="date" class="form-control" id="inicio_garantia" name="inicio_garantia" placeholder="Inicio Garantia" value="<?php echo $idNew->inicio_garantia; ?>">
                         </div>
                     </div><br>
-
 
                     <div class="row">
                         <div class="form-group col">

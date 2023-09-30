@@ -88,9 +88,9 @@ if (!isset($_SESSION['nombre'])) {
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
 
-        <!-- MODAL -->
+    <div class="container-fluid">
+        <!-- INICIO MODAL -->
         <div class="modal fade" id="verModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -100,7 +100,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                     <div class="modal-body">
                         <form>
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -116,7 +115,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -134,7 +132,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -150,7 +147,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -223,8 +219,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div>
-        <!-- MODAL -->
-
+        <!-- FIN MODAL -->
 
         <div class="container-fluid">
             <div class="row">
@@ -235,8 +230,7 @@ if (!isset($_SESSION['nombre'])) {
                 <a href="procesos/exportar/exportar_control_convenio.php" class="btn btn-success" style="width: 10em;">Exportar Excel</a>
             </div><br>
 
-            <!-- Inicio Form Import Excel -->
-
+            <!-- INICIO IMPORT EXCEL -->
             <form action="files.php" method="post" enctype="multipart/form-data" id="filesForm">
                 <div class="row">
                     <div class="form-group col">
@@ -264,7 +258,7 @@ if (!isset($_SESSION['nombre'])) {
                     });
                 }
             </script>
-            <!-- Termino Form Import Excel -->
+            <!-- FIN IMPORT EXCEL -->
 
             <div class="row">
                 <div class="col-lg-12">

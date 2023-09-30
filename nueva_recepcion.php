@@ -24,7 +24,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,7 +122,7 @@ if (!isset($_SESSION['nombre'])) {
 
                                             $idsRecepcion = $sentenciaR->fetch(PDO::FETCH_OBJ);      // AL HACER UNA CONSULTA WHERE SE DEBE TRANSFORMAR LA SENTENCIA EN OBJETO PARA PODER TRANAJAR CON ELLA
 
-                                            if (empty($idsRecepcion)) {                                      // VALIDA SI relacion_id ESTA VACIA
+                                            if (empty($idsRecepcion)) {
                                                 echo '<a href="vistas/ingreso/ingreso_recepcion.php?id_relacion_key=' . $dato->id_relacion . '"><i class="fas fa-concierge-bell fa-2x" style="color: firebrick;"></i></i></a>';
 
                                                 $idNew = $sentencia->fetch(PDO::FETCH_OBJ);

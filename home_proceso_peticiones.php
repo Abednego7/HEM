@@ -20,7 +20,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,8 +71,6 @@ if (!isset($_SESSION['nombre'])) {
             </div>
         </nav>
     </header><br><br>
-
-
 
     <div class="container-fluid">
         <h2 style="text-align: center; margin-bottom: 1em;">MENÚ PROCESOS DE PETICIONES</h2>

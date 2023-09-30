@@ -26,7 +26,6 @@ if (!isset($_SESSION['nombre'])) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,8 +75,7 @@ if (!isset($_SESSION['nombre'])) {
     </header>
 
     <div class="container-fluid">
-
-        <!-- MODAL -->
+        <!-- INICIO MODAL -->
         <div class="modal fade" id="verModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -87,7 +85,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                     <div class="modal-body">
                         <form>
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -103,7 +100,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -121,7 +117,6 @@ if (!isset($_SESSION['nombre'])) {
                                 </div>
                             </div>
 
-
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="mb-3">
@@ -137,7 +132,6 @@ if (!isset($_SESSION['nombre'])) {
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="row">
                                 <div class="form-group col">
@@ -210,10 +204,9 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div>
         </div>
-        <!-- MODAL -->
-        
-        <div class="container-fluid">
+        <!-- FIN MODAL -->
 
+        <div class="container-fluid">
             <div class="row">
                 <h2 style="text-align:center; margin-top: 20px;">MANTENCIONES</h2>
             </div><br><br>
@@ -224,8 +217,7 @@ if (!isset($_SESSION['nombre'])) {
                 </div>
             </div><br>
 
-
-            <!-- Inicio Form Import Excel -->
+            <!-- INICIO IMPORT EXCEL -->
             <form action="files.php" method="post" enctype="multipart/form-data" id="filesForm">
                 <div class="row">
                     <div class="form-group col">
@@ -252,11 +244,8 @@ if (!isset($_SESSION['nombre'])) {
                         }
                     });
                 }
-            </script>
-
-            <!-- Termino Form Import Excel -->
-
-            <br><br>
+            </script><br><br>
+            <!-- FIN IMPORT EXCEL -->
 
             <div class="row">
                 <div class="col-lg-12">
@@ -328,8 +317,7 @@ if (!isset($_SESSION['nombre'])) {
 
                                         <?php
 
-                                        //! ORDEN DE FECHAS         (SEGUIR TESTEANDO CON LA FECHAS)
-
+                                        // ORDEN DE FECHAS
                                         if ($fecha_mp_1 == $fechaActual) {
 
                                             echo '<td style="background-color: rgb(247, 84, 84);">' . $dato->fecha_mp_2 . '</td> 

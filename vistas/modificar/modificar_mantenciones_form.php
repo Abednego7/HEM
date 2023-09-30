@@ -75,9 +75,6 @@ if (!isset($_SESSION['nombre'])) {
         </div><br>
 
         <form class="form-horizontal form-bg" method="POST" action="../../procesos/modificar/modificar_mantenciones.php" enctype="multipart/form-data" autocomplete="off">
-
-
-
             <div class="card">
                 <h5 class="card-header">Modificar</h5>
                 <div class="card-body">
@@ -206,9 +203,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
-
-                    <!-- Inicio Tabla -->
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
@@ -596,7 +590,6 @@ if (!isset($_SESSION['nombre'])) {
                     </div>
                     <!-- Termino Tabla -->
 
-
                     <!-- Validacion -->
                     <input type="hidden" name="oculto" value="1">
                     <input type="hidden" name="envioID" value="<?php echo $idNew->id_mantenciones; ?>">
@@ -615,12 +608,10 @@ if (!isset($_SESSION['nombre'])) {
         </form><br><br>
     </div>
 
-
     <script type="text/javascript" src="../../js/calculoMeses.js"></script>
 
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-
 
     <script type="text/javascript" src="../../js/main.js"></script>
 

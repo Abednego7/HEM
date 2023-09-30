@@ -362,8 +362,6 @@ if (!isset($_SESSION['nombre'])) {
                         </div>
                     </div><br>
 
-
-                    <!-- Inicio Tabla -->
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
@@ -1125,7 +1123,6 @@ if (!isset($_SESSION['nombre'])) {
                     <!-- Validacion -->
                     <input type="hidden" name="oculto" value="2">
                     <input type="hidden" name="envioID" value="<?php echo $idNew->id_peticiones; ?>"><br>
-
 
                     <!-- Botones -->
                     <div class="form-group d-flex justify-content-center">
