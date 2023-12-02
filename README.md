@@ -21,7 +21,7 @@ Se han modificado los datos de ingresos, las solicitudes, los archivos PDF y muc
 Contenido del Repositorio
 En este repositorio, encontrarás el código fuente de la aplicación web de Gestión de Equipos Médicos, junto con documentación detallada sobre su funcionamiento y cómo implementarla en tu propio entorno si así lo deseas.
 
-# ⚠️ Nota Importante ⚠️
+# ⚠️ Nota Importante
 Este repositorio se proporciona con fines de referencia y demostración. No debe utilizarse en entornos de producción ni con datos reales.
 
 # ✂️ Herramientas 🔨
