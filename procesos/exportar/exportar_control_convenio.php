@@ -26,10 +26,12 @@ $consulta = $sentencia->fetchAll(PDO::FETCH_OBJ);
 header("Content-Type: application/vnd.ms-excel; charset=iso-8859-1");
 header("Content-Disposition: attachment; filename=CONTROL_CONVENIO.xls");
 
+$anio = (new DateTime)->format("Y");
+
 ?>
 
 <table border="1">
-    <h1 style="text-align: center;">Control de Convenio 2023</h1>
+    <h1 style="text-align: center;">Control de Convenio <?php echo $anio; ?></h1>
     <tr>
         <th>ID Control Convenio</th>
         <th>ID Catastro</th>

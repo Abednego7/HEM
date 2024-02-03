@@ -367,8 +367,6 @@ if (!isset($_SESSION['nombre'])) {
                 }
             }
         }
-
-
     } elseif ($_SESSION['tipo'] === "PROYECTOS" || $_SESSION['tipo'] === "SECRETARIA" || $_SESSION['tipo'] === "SECRETARIA GENERAL") {
         header('Location: ../../catastro.php');
     }

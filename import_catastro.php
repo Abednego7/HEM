@@ -21,7 +21,7 @@ if (!isset($_SESSION['nombre'])) {
             $contactList[] = explode(";", $contact); // (" ; ") esto es el buscador de coincidencias de CSV UTF8 
         }                                           // El error que tuve se provoco por estar el explode en  (",") siendo el CSV delimitado por ";"
 
-        
+
         // Insertar datos
         foreach ($contactList as $contactData) {
             $bd->query("INSERT INTO equipamiento (equipos_instalaciones, servicio, sector, clase, subclase, def_ley_presupuesto, equipo, marca, modelo, serie, 

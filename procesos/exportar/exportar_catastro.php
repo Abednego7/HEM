@@ -8,10 +8,12 @@ $equipamiento = $sentencia->fetchAll(PDO::FETCH_OBJ);
 header("Content-Type: application/vnd.ms-excel; charset=iso-8859-1");
 header("Content-Disposition: attachment; filename=CATASTRO.xls");
 
+$anio = (new DateTime)->format("Y");
+
 ?>
 
 <table border="1">
-    <h1 style="text-align: center;">Catastro 2023</h1>
+    <h1 style="text-align: center;">Catastro <?php echo $anio; ?></h1>
     <tr>
         <th>ID</th>
         <th>Equipos/Instalaciones</th>
