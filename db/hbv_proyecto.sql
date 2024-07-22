@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 06-09-2023 a las 22:10:38
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Host: 127.0.0.1
+-- Generation Time: Jul 22, 2024 at 05:37 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `hbv_proyecto`
+-- Database: `hbv_proyecto`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cod_manager`
+-- Table structure for table `cod_manager`
 --
 
 CREATE TABLE `cod_manager` (
@@ -34,7 +34,7 @@ CREATE TABLE `cod_manager` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `cod_manager`
+-- Dumping data for table `cod_manager`
 --
 
 INSERT INTO `cod_manager` (`id_cod_manager`, `articulo`, `nombre_articulo`) VALUES
@@ -1736,7 +1736,7 @@ INSERT INTO `cod_manager` (`id_cod_manager`, `articulo`, `nombre_articulo`) VALU
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `control_convenio`
+-- Table structure for table `control_convenio`
 --
 
 CREATE TABLE `control_convenio` (
@@ -1846,16 +1846,664 @@ CREATE TABLE `control_convenio` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `control_convenio`
+-- Dumping data for table `control_convenio`
 --
 
 INSERT INTO `control_convenio` (`id_control_convenio`, `ejecutivo_compra`, `correo_ejecutivo`, `edificio`, `piso`, `sala_pasillo`, `responsable`, `correo_responsable`, `grupo`, `id_licitacion_convenio`, `empresa_adjudicada`, `equipo_critico_m_c`, `ubicacion`, `fecha_inicio_convenio`, `fecha_termino_convenio`, `duracion_en_meses`, `peridiocidad`, `n_manten_preventivas`, `valor_mantencion_1`, `fecha_mantencion_1`, `fecha_recep_mant_1`, `orden_compra_mant_1`, `fecha_oc_mant_1`, `observacion_mant_1`, `verificable_mant_1`, `valor_mantencion_2`, `fecha_mantencion_2`, `fecha_recep_mant_2`, `orden_compra_mant_2`, `fecha_oc_mant_2`, `observacion_mant_2`, `verificable_mant_2`, `valor_mantencion_3`, `fecha_mantencion_3`, `fecha_recep_mant_3`, `orden_compra_mant_3`, `fecha_oc_mant_3`, `observacion_mant_3`, `verificable_mant_3`, `valor_mantencion_4`, `fecha_mantencion_4`, `fecha_recep_mant_4`, `orden_compra_mant_4`, `fecha_oc_mant_4`, `observacion_mant_4`, `verificable_mant_4`, `valor_mantencion_5`, `fecha_mantencion_5`, `fecha_recep_mant_5`, `orden_compra_mant_5`, `fecha_oc_mant_5`, `observacion_mant_5`, `verificable_mant_5`, `valor_mantencion_6`, `fecha_mantencion_6`, `fecha_recep_mant_6`, `orden_compra_mant_6`, `fecha_oc_mant_6`, `observacion_mant_6`, `verificable_mant_6`, `valor_mantencion_7`, `fecha_mantencion_7`, `fecha_recep_mant_7`, `orden_compra_mant_7`, `fecha_oc_mant_7`, `observacion_mant_7`, `verificable_mant_7`, `valor_mantencion_8`, `fecha_mantencion_8`, `fecha_recep_mant_8`, `orden_compra_mant_8`, `fecha_oc_mant_8`, `observacion_mant_8`, `verificable_mant_8`, `valor_mantencion_9`, `fecha_mantencion_9`, `fecha_recep_mant_9`, `orden_compra_mant_9`, `fecha_oc_mant_9`, `observacion_mant_9`, `verificable_mant_9`, `valor_mantencion_10`, `fecha_mantencion_10`, `fecha_recep_mant_10`, `orden_compra_mant_10`, `fecha_oc_mant_10`, `observacion_mant_10`, `verificable_mant_10`, `valor_mantencion_11`, `fecha_mantencion_11`, `fecha_recep_mant_11`, `orden_compra_mant_11`, `fecha_oc_mant_11`, `observacion_mant_11`, `verificable_mant_11`, `valor_mantencion_12`, `fecha_mantencion_12`, `fecha_recep_mant_12`, `orden_compra_mant_12`, `fecha_oc_mant_12`, `observacion_mant_12`, `verificable_mant_12`, `id_control_convenio_relacion`) VALUES
-(92, 'YUICHIRO HANMA', 'yuichiro.kaioh@gmail.com', 'CA', '1', '1', 'BAKI HANMA', 'baki.hanma@gmail.com', 'Grupo 4', '321', 'Dell', 'SI', 'New York #34', '2023-09-08', '2023-09-07', 1, 'MENSUAL', 1, 325000, '2023-09-20', '2023-09-21', '555', '2023-09-20', 'Ninguna', '1', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 776);
+(89, 'GERARDO ALARCON', 'gerardo.alarcon@redsalud.gov.cl', 'CA', '1', '34', 'ALEX REYES HENRIQUEZ', 'alex.reyes@redsalud.gov.cl', 'rtgr', '43534', 'grerge', 'SI', '435greger', '2023-06-02', '2023-06-14', 1, 'MENSUAL', 1, 12312, '2023-06-09', '2023-06-03', '', '2023-06-08', 'grgreggre nada', 'g', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 0, '0000-00-00', '0000-00-00', '', '0000-00-00', '', '', 265);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `equipamiento`
+-- Table structure for table `convenios`
+--
+
+CREATE TABLE `convenios` (
+  `id_convenio` int(11) NOT NULL,
+  `unidad` varchar(20) DEFAULT NULL,
+  `sub_depto` varchar(20) DEFAULT NULL,
+  `cod_de_serv` text DEFAULT NULL,
+  `detalle_convenio` text DEFAULT NULL,
+  `id_licitacion` varchar(20) DEFAULT NULL,
+  `ordinario` varchar(4) DEFAULT NULL,
+  `fecha_ordinario` date DEFAULT NULL,
+  `resolu_base_tec` int(4) DEFAULT NULL,
+  `fecha_base_tec` date DEFAULT NULL,
+  `resolu_adjudicacion` int(6) DEFAULT NULL,
+  `fecha_resolu_adjudi` date DEFAULT NULL,
+  `resolu_contrato` int(6) DEFAULT NULL,
+  `fecha_resolu_contra` date DEFAULT NULL,
+  `servicio` varchar(100) DEFAULT NULL,
+  `rut` varchar(10) DEFAULT NULL,
+  `empresa` varchar(100) DEFAULT NULL,
+  `total_convenio` int(10) DEFAULT NULL,
+  `saldo_convenio` int(10) DEFAULT NULL,
+  `fecha_inicio` date DEFAULT NULL,
+  `fecha_termino` date DEFAULT NULL,
+  `dias_para_termino` int(5) DEFAULT NULL,
+  `total_cuotas` int(5) DEFAULT NULL,
+  `duracion_meses` int(5) DEFAULT NULL,
+  `saldo_en_meses` int(10) DEFAULT NULL,
+  `saldo_conexo` int(10) DEFAULT NULL,
+  `resolu_conexo` int(11) DEFAULT NULL,
+  `fecha_resu_conexo` date DEFAULT NULL,
+  `peridiocidad` varchar(12) DEFAULT NULL,
+  `orden_compra_1` text DEFAULT NULL,
+  `fecha_oc_1` date DEFAULT NULL,
+  `total_oc_1` int(11) DEFAULT NULL,
+  `consumo_oc_1` int(11) DEFAULT NULL,
+  `saldo_oc_1` int(11) DEFAULT NULL,
+  `fecha_factura_1` date DEFAULT NULL,
+  `n_factura_1` int(11) DEFAULT NULL,
+  `valor_factura_1` int(11) DEFAULT NULL,
+  `observacion_1` text DEFAULT NULL,
+  `periodo_mant_1` text DEFAULT NULL,
+  `cuota_1` int(5) DEFAULT NULL,
+  `fecha_recep_1` date DEFAULT NULL,
+  `n_acta_1` text DEFAULT NULL,
+  `fech_emisi_acta_1` date DEFAULT NULL,
+  `folio_1` int(10) DEFAULT NULL,
+  `estado_pago_1` text DEFAULT NULL,
+  `orden_compra_2` text DEFAULT NULL,
+  `fecha_oc_2` date DEFAULT NULL,
+  `total_oc_2` int(11) DEFAULT NULL,
+  `consumo_oc_2` int(11) DEFAULT NULL,
+  `saldo_oc_2` int(11) DEFAULT NULL,
+  `fecha_factura_2` date DEFAULT NULL,
+  `n_factura_2` int(11) DEFAULT NULL,
+  `valor_factura_2` int(11) DEFAULT NULL,
+  `observacion_2` text DEFAULT NULL,
+  `periodo_mant_2` text DEFAULT NULL,
+  `cuota_2` int(5) DEFAULT NULL,
+  `fecha_recep_2` date DEFAULT NULL,
+  `n_acta_2` text DEFAULT NULL,
+  `fech_emisi_acta_2` date DEFAULT NULL,
+  `folio_2` int(10) DEFAULT NULL,
+  `estado_pago_2` text DEFAULT NULL,
+  `orden_compra_3` text DEFAULT NULL,
+  `fecha_oc_3` date DEFAULT NULL,
+  `total_oc_3` int(11) DEFAULT NULL,
+  `consumo_oc_3` int(11) DEFAULT NULL,
+  `saldo_oc_3` int(11) DEFAULT NULL,
+  `fecha_factura_3` date DEFAULT NULL,
+  `n_factura_3` int(11) DEFAULT NULL,
+  `valor_factura_3` int(11) DEFAULT NULL,
+  `observacion_3` text DEFAULT NULL,
+  `periodo_mant_3` text DEFAULT NULL,
+  `cuota_3` int(5) DEFAULT NULL,
+  `fecha_recep_3` date DEFAULT NULL,
+  `n_acta_3` text DEFAULT NULL,
+  `fech_emisi_acta_3` date DEFAULT NULL,
+  `folio_3` int(10) DEFAULT NULL,
+  `estado_pago_3` text DEFAULT NULL,
+  `orden_compra_4` text DEFAULT NULL,
+  `fecha_oc_4` date DEFAULT NULL,
+  `total_oc_4` int(11) DEFAULT NULL,
+  `consumo_oc_4` int(11) DEFAULT NULL,
+  `saldo_oc_4` int(11) DEFAULT NULL,
+  `fecha_factura_4` date DEFAULT NULL,
+  `n_factura_4` int(11) DEFAULT NULL,
+  `valor_factura_4` int(11) DEFAULT NULL,
+  `observacion_4` text DEFAULT NULL,
+  `periodo_mant_4` text DEFAULT NULL,
+  `cuota_4` int(5) DEFAULT NULL,
+  `fecha_recep_4` date DEFAULT NULL,
+  `n_acta_4` text DEFAULT NULL,
+  `fech_emisi_acta_4` date DEFAULT NULL,
+  `folio_4` int(10) DEFAULT NULL,
+  `estado_pago_4` text DEFAULT NULL,
+  `orden_compra_5` text DEFAULT NULL,
+  `fecha_oc_5` date DEFAULT NULL,
+  `total_oc_5` int(11) DEFAULT NULL,
+  `consumo_oc_5` int(11) DEFAULT NULL,
+  `saldo_oc_5` int(11) DEFAULT NULL,
+  `fecha_factura_5` date DEFAULT NULL,
+  `n_factura_5` int(11) DEFAULT NULL,
+  `valor_factura_5` int(11) DEFAULT NULL,
+  `observacion_5` text DEFAULT NULL,
+  `periodo_mant_5` text DEFAULT NULL,
+  `cuota_5` int(5) DEFAULT NULL,
+  `fecha_recep_5` date DEFAULT NULL,
+  `n_acta_5` text DEFAULT NULL,
+  `fech_emisi_acta_5` date DEFAULT NULL,
+  `folio_5` int(10) DEFAULT NULL,
+  `estado_pago_5` text DEFAULT NULL,
+  `orden_compra_6` text DEFAULT NULL,
+  `fecha_oc_6` date DEFAULT NULL,
+  `total_oc_6` int(11) DEFAULT NULL,
+  `consumo_oc_6` int(11) DEFAULT NULL,
+  `saldo_oc_6` int(11) DEFAULT NULL,
+  `fecha_factura_6` date DEFAULT NULL,
+  `n_factura_6` int(11) DEFAULT NULL,
+  `valor_factura_6` int(11) DEFAULT NULL,
+  `observacion_6` text DEFAULT NULL,
+  `periodo_mant_6` text DEFAULT NULL,
+  `cuota_6` int(5) DEFAULT NULL,
+  `fecha_recep_6` date DEFAULT NULL,
+  `n_acta_6` text DEFAULT NULL,
+  `fech_emisi_acta_6` date DEFAULT NULL,
+  `folio_6` int(10) DEFAULT NULL,
+  `estado_pago_6` text DEFAULT NULL,
+  `orden_compra_7` text DEFAULT NULL,
+  `fecha_oc_7` date DEFAULT NULL,
+  `total_oc_7` int(11) DEFAULT NULL,
+  `consumo_oc_7` int(11) DEFAULT NULL,
+  `saldo_oc_7` int(11) DEFAULT NULL,
+  `fecha_factura_7` date DEFAULT NULL,
+  `n_factura_7` int(11) DEFAULT NULL,
+  `valor_factura_7` int(11) DEFAULT NULL,
+  `observacion_7` text DEFAULT NULL,
+  `periodo_mant_7` text DEFAULT NULL,
+  `cuota_7` int(5) DEFAULT NULL,
+  `fecha_recep_7` date DEFAULT NULL,
+  `n_acta_7` text DEFAULT NULL,
+  `fech_emisi_acta_7` date DEFAULT NULL,
+  `folio_7` int(10) DEFAULT NULL,
+  `estado_pago_7` text DEFAULT NULL,
+  `orden_compra_8` text DEFAULT NULL,
+  `fecha_oc_8` date DEFAULT NULL,
+  `total_oc_8` int(11) DEFAULT NULL,
+  `consumo_oc_8` int(11) DEFAULT NULL,
+  `saldo_oc_8` int(11) DEFAULT NULL,
+  `fecha_factura_8` date DEFAULT NULL,
+  `n_factura_8` int(11) DEFAULT NULL,
+  `valor_factura_8` int(11) DEFAULT NULL,
+  `observacion_8` text DEFAULT NULL,
+  `periodo_mant_8` text DEFAULT NULL,
+  `cuota_8` int(5) DEFAULT NULL,
+  `fecha_recep_8` date DEFAULT NULL,
+  `n_acta_8` text DEFAULT NULL,
+  `fech_emisi_acta_8` date DEFAULT NULL,
+  `folio_8` int(10) DEFAULT NULL,
+  `estado_pago_8` text DEFAULT NULL,
+  `orden_compra_9` text DEFAULT NULL,
+  `fecha_oc_9` date DEFAULT NULL,
+  `total_oc_9` int(11) DEFAULT NULL,
+  `consumo_oc_9` int(11) DEFAULT NULL,
+  `saldo_oc_9` int(11) DEFAULT NULL,
+  `fecha_factura_9` date DEFAULT NULL,
+  `n_factura_9` int(11) DEFAULT NULL,
+  `valor_factura_9` int(11) DEFAULT NULL,
+  `observacion_9` text DEFAULT NULL,
+  `periodo_mant_9` text DEFAULT NULL,
+  `cuota_9` int(5) DEFAULT NULL,
+  `fecha_recep_9` date DEFAULT NULL,
+  `n_acta_9` text DEFAULT NULL,
+  `fech_emisi_acta_9` date DEFAULT NULL,
+  `folio_9` int(10) DEFAULT NULL,
+  `estado_pago_9` text DEFAULT NULL,
+  `orden_compra_10` text DEFAULT NULL,
+  `fecha_oc_10` date DEFAULT NULL,
+  `total_oc_10` int(11) DEFAULT NULL,
+  `consumo_oc_10` int(11) DEFAULT NULL,
+  `saldo_oc_10` int(11) DEFAULT NULL,
+  `fecha_factura_10` date DEFAULT NULL,
+  `n_factura_10` int(11) DEFAULT NULL,
+  `valor_factura_10` int(11) DEFAULT NULL,
+  `observacion_10` text DEFAULT NULL,
+  `periodo_mant_10` text DEFAULT NULL,
+  `cuota_10` int(5) DEFAULT NULL,
+  `fecha_recep_10` date DEFAULT NULL,
+  `n_acta_10` text DEFAULT NULL,
+  `fech_emisi_acta_10` date DEFAULT NULL,
+  `folio_10` int(10) DEFAULT NULL,
+  `estado_pago_10` text DEFAULT NULL,
+  `orden_compra_11` text DEFAULT NULL,
+  `fecha_oc_11` date DEFAULT NULL,
+  `total_oc_11` int(11) DEFAULT NULL,
+  `consumo_oc_11` int(11) DEFAULT NULL,
+  `saldo_oc_11` int(11) DEFAULT NULL,
+  `fecha_factura_11` date DEFAULT NULL,
+  `n_factura_11` int(11) DEFAULT NULL,
+  `valor_factura_11` int(11) DEFAULT NULL,
+  `observacion_11` text DEFAULT NULL,
+  `periodo_mant_11` text DEFAULT NULL,
+  `cuota_11` int(5) DEFAULT NULL,
+  `fecha_recep_11` date DEFAULT NULL,
+  `n_acta_11` text DEFAULT NULL,
+  `fech_emisi_acta_11` date DEFAULT NULL,
+  `folio_11` int(10) DEFAULT NULL,
+  `estado_pago_11` text DEFAULT NULL,
+  `orden_compra_12` text DEFAULT NULL,
+  `fecha_oc_12` date DEFAULT NULL,
+  `total_oc_12` int(11) DEFAULT NULL,
+  `consumo_oc_12` int(11) DEFAULT NULL,
+  `saldo_oc_12` int(11) DEFAULT NULL,
+  `fecha_factura_12` date DEFAULT NULL,
+  `n_factura_12` int(11) DEFAULT NULL,
+  `valor_factura_12` int(11) DEFAULT NULL,
+  `observacion_12` text DEFAULT NULL,
+  `periodo_mant_12` text DEFAULT NULL,
+  `cuota_12` int(5) DEFAULT NULL,
+  `fecha_recep_12` date DEFAULT NULL,
+  `n_acta_12` text DEFAULT NULL,
+  `fech_emisi_acta_12` date DEFAULT NULL,
+  `folio_12` int(10) DEFAULT NULL,
+  `estado_pago_12` text DEFAULT NULL,
+  `orden_compra_13` text DEFAULT NULL,
+  `fecha_oc_13` date DEFAULT NULL,
+  `total_oc_13` int(11) DEFAULT NULL,
+  `consumo_oc_13` int(11) DEFAULT NULL,
+  `saldo_oc_13` int(11) DEFAULT NULL,
+  `fecha_factura_13` date DEFAULT NULL,
+  `n_factura_13` int(11) DEFAULT NULL,
+  `valor_factura_13` int(11) DEFAULT NULL,
+  `observacion_13` text DEFAULT NULL,
+  `periodo_mant_13` text DEFAULT NULL,
+  `cuota_13` int(5) DEFAULT NULL,
+  `fecha_recep_13` date DEFAULT NULL,
+  `n_acta_13` text DEFAULT NULL,
+  `fech_emisi_acta_13` date DEFAULT NULL,
+  `folio_13` int(10) DEFAULT NULL,
+  `estado_pago_13` text DEFAULT NULL,
+  `orden_compra_14` text DEFAULT NULL,
+  `fecha_oc_14` date DEFAULT NULL,
+  `total_oc_14` int(11) DEFAULT NULL,
+  `consumo_oc_14` int(11) DEFAULT NULL,
+  `saldo_oc_14` int(11) DEFAULT NULL,
+  `fecha_factura_14` date DEFAULT NULL,
+  `n_factura_14` int(11) DEFAULT NULL,
+  `valor_factura_14` int(11) DEFAULT NULL,
+  `observacion_14` text DEFAULT NULL,
+  `periodo_mant_14` text DEFAULT NULL,
+  `cuota_14` int(5) DEFAULT NULL,
+  `fecha_recep_14` date DEFAULT NULL,
+  `n_acta_14` text DEFAULT NULL,
+  `fech_emisi_acta_14` date DEFAULT NULL,
+  `folio_14` int(10) DEFAULT NULL,
+  `estado_pago_14` text DEFAULT NULL,
+  `orden_compra_15` text DEFAULT NULL,
+  `fecha_oc_15` date DEFAULT NULL,
+  `total_oc_15` int(11) DEFAULT NULL,
+  `consumo_oc_15` int(11) DEFAULT NULL,
+  `saldo_oc_15` int(11) DEFAULT NULL,
+  `fecha_factura_15` date DEFAULT NULL,
+  `n_factura_15` int(11) DEFAULT NULL,
+  `valor_factura_15` int(11) DEFAULT NULL,
+  `observacion_15` text DEFAULT NULL,
+  `periodo_mant_15` text DEFAULT NULL,
+  `cuota_15` int(5) DEFAULT NULL,
+  `fecha_recep_15` date DEFAULT NULL,
+  `n_acta_15` text DEFAULT NULL,
+  `fech_emisi_acta_15` date DEFAULT NULL,
+  `folio_15` int(10) DEFAULT NULL,
+  `estado_pago_15` text DEFAULT NULL,
+  `orden_compra_16` text DEFAULT NULL,
+  `fecha_oc_16` date DEFAULT NULL,
+  `total_oc_16` int(11) DEFAULT NULL,
+  `consumo_oc_16` int(11) DEFAULT NULL,
+  `saldo_oc_16` int(11) DEFAULT NULL,
+  `fecha_factura_16` date DEFAULT NULL,
+  `n_factura_16` int(11) DEFAULT NULL,
+  `valor_factura_16` int(11) DEFAULT NULL,
+  `observacion_16` text DEFAULT NULL,
+  `periodo_mant_16` text DEFAULT NULL,
+  `cuota_16` int(5) DEFAULT NULL,
+  `fecha_recep_16` date DEFAULT NULL,
+  `n_acta_16` text DEFAULT NULL,
+  `fech_emisi_acta_16` date DEFAULT NULL,
+  `folio_16` int(10) DEFAULT NULL,
+  `estado_pago_16` text DEFAULT NULL,
+  `orden_compra_17` text DEFAULT NULL,
+  `fecha_oc_17` date DEFAULT NULL,
+  `total_oc_17` int(11) DEFAULT NULL,
+  `consumo_oc_17` int(11) DEFAULT NULL,
+  `saldo_oc_17` int(11) DEFAULT NULL,
+  `fecha_factura_17` date DEFAULT NULL,
+  `n_factura_17` int(11) DEFAULT NULL,
+  `valor_factura_17` int(11) DEFAULT NULL,
+  `observacion_17` text DEFAULT NULL,
+  `periodo_mant_17` text DEFAULT NULL,
+  `cuota_17` int(5) DEFAULT NULL,
+  `fecha_recep_17` date DEFAULT NULL,
+  `n_acta_17` text DEFAULT NULL,
+  `fech_emisi_acta_17` date DEFAULT NULL,
+  `folio_17` int(10) DEFAULT NULL,
+  `estado_pago_17` text DEFAULT NULL,
+  `orden_compra_18` text DEFAULT NULL,
+  `fecha_oc_18` date DEFAULT NULL,
+  `total_oc_18` int(11) DEFAULT NULL,
+  `consumo_oc_18` int(11) DEFAULT NULL,
+  `saldo_oc_18` int(11) DEFAULT NULL,
+  `fecha_factura_18` date DEFAULT NULL,
+  `n_factura_18` int(11) DEFAULT NULL,
+  `valor_factura_18` int(11) DEFAULT NULL,
+  `observacion_18` text DEFAULT NULL,
+  `periodo_mant_18` text DEFAULT NULL,
+  `cuota_18` int(5) DEFAULT NULL,
+  `fecha_recep_18` date DEFAULT NULL,
+  `n_acta_18` text DEFAULT NULL,
+  `fech_emisi_acta_18` date DEFAULT NULL,
+  `folio_18` int(10) DEFAULT NULL,
+  `estado_pago_18` text DEFAULT NULL,
+  `orden_compra_19` text DEFAULT NULL,
+  `fecha_oc_19` date DEFAULT NULL,
+  `total_oc_19` int(11) DEFAULT NULL,
+  `consumo_oc_19` int(11) DEFAULT NULL,
+  `saldo_oc_19` int(11) DEFAULT NULL,
+  `fecha_factura_19` date DEFAULT NULL,
+  `n_factura_19` int(11) DEFAULT NULL,
+  `valor_factura_19` int(11) DEFAULT NULL,
+  `observacion_19` text DEFAULT NULL,
+  `periodo_mant_19` text DEFAULT NULL,
+  `cuota_19` int(5) DEFAULT NULL,
+  `fecha_recep_19` date DEFAULT NULL,
+  `n_acta_19` text DEFAULT NULL,
+  `fech_emisi_acta_19` date DEFAULT NULL,
+  `folio_19` int(10) DEFAULT NULL,
+  `estado_pago_19` text DEFAULT NULL,
+  `orden_compra_20` text DEFAULT NULL,
+  `fecha_oc_20` date DEFAULT NULL,
+  `total_oc_20` int(11) DEFAULT NULL,
+  `consumo_oc_20` int(11) DEFAULT NULL,
+  `saldo_oc_20` int(11) DEFAULT NULL,
+  `fecha_factura_20` date DEFAULT NULL,
+  `n_factura_20` int(11) DEFAULT NULL,
+  `valor_factura_20` int(11) DEFAULT NULL,
+  `observacion_20` text DEFAULT NULL,
+  `periodo_mant_20` text DEFAULT NULL,
+  `cuota_20` int(5) DEFAULT NULL,
+  `fecha_recep_20` date DEFAULT NULL,
+  `n_acta_20` text DEFAULT NULL,
+  `fech_emisi_acta_20` date DEFAULT NULL,
+  `folio_20` int(10) DEFAULT NULL,
+  `estado_pago_20` text DEFAULT NULL,
+  `orden_compra_21` text DEFAULT NULL,
+  `fecha_oc_21` date DEFAULT NULL,
+  `total_oc_21` int(11) DEFAULT NULL,
+  `consumo_oc_21` int(11) DEFAULT NULL,
+  `saldo_oc_21` int(11) DEFAULT NULL,
+  `fecha_factura_21` date DEFAULT NULL,
+  `n_factura_21` int(11) DEFAULT NULL,
+  `valor_factura_21` int(11) DEFAULT NULL,
+  `observacion_21` text DEFAULT NULL,
+  `periodo_mant_21` text DEFAULT NULL,
+  `cuota_21` int(5) DEFAULT NULL,
+  `fecha_recep_21` date DEFAULT NULL,
+  `n_acta_21` text DEFAULT NULL,
+  `fech_emisi_acta_21` date DEFAULT NULL,
+  `folio_21` int(10) DEFAULT NULL,
+  `estado_pago_21` text DEFAULT NULL,
+  `orden_compra_22` text DEFAULT NULL,
+  `fecha_oc_22` date DEFAULT NULL,
+  `total_oc_22` int(11) DEFAULT NULL,
+  `consumo_oc_22` int(11) DEFAULT NULL,
+  `saldo_oc_22` int(11) DEFAULT NULL,
+  `fecha_factura_22` date DEFAULT NULL,
+  `n_factura_22` int(11) DEFAULT NULL,
+  `valor_factura_22` int(11) DEFAULT NULL,
+  `observacion_22` text DEFAULT NULL,
+  `periodo_mant_22` text DEFAULT NULL,
+  `cuota_22` int(5) DEFAULT NULL,
+  `fecha_recep_22` date DEFAULT NULL,
+  `n_acta_22` text DEFAULT NULL,
+  `fech_emisi_acta_22` date DEFAULT NULL,
+  `folio_22` int(10) DEFAULT NULL,
+  `estado_pago_22` text DEFAULT NULL,
+  `orden_compra_23` text DEFAULT NULL,
+  `fecha_oc_23` date DEFAULT NULL,
+  `total_oc_23` int(11) DEFAULT NULL,
+  `consumo_oc_23` int(11) DEFAULT NULL,
+  `saldo_oc_23` int(11) DEFAULT NULL,
+  `fecha_factura_23` date DEFAULT NULL,
+  `n_factura_23` int(11) DEFAULT NULL,
+  `valor_factura_23` int(11) DEFAULT NULL,
+  `observacion_23` text DEFAULT NULL,
+  `periodo_mant_23` text DEFAULT NULL,
+  `cuota_23` int(5) DEFAULT NULL,
+  `fecha_recep_23` date DEFAULT NULL,
+  `n_acta_23` text DEFAULT NULL,
+  `fech_emisi_acta_23` date DEFAULT NULL,
+  `folio_23` int(10) DEFAULT NULL,
+  `estado_pago_23` text DEFAULT NULL,
+  `orden_compra_24` text DEFAULT NULL,
+  `fecha_oc_24` date DEFAULT NULL,
+  `total_oc_24` int(11) DEFAULT NULL,
+  `consumo_oc_24` int(11) DEFAULT NULL,
+  `saldo_oc_24` int(11) DEFAULT NULL,
+  `fecha_factura_24` date DEFAULT NULL,
+  `n_factura_24` int(11) DEFAULT NULL,
+  `valor_factura_24` int(11) DEFAULT NULL,
+  `observacion_24` text DEFAULT NULL,
+  `periodo_mant_24` text DEFAULT NULL,
+  `cuota_24` int(5) DEFAULT NULL,
+  `fecha_recep_24` date DEFAULT NULL,
+  `n_acta_24` text DEFAULT NULL,
+  `fech_emisi_acta_24` date DEFAULT NULL,
+  `folio_24` int(10) DEFAULT NULL,
+  `estado_pago_24` text DEFAULT NULL,
+  `orden_compra_25` text DEFAULT NULL,
+  `fecha_oc_25` date DEFAULT NULL,
+  `total_oc_25` int(11) DEFAULT NULL,
+  `consumo_oc_25` int(11) DEFAULT NULL,
+  `saldo_oc_25` int(11) DEFAULT NULL,
+  `fecha_factura_25` date DEFAULT NULL,
+  `n_factura_25` int(11) DEFAULT NULL,
+  `valor_factura_25` int(11) DEFAULT NULL,
+  `observacion_25` text DEFAULT NULL,
+  `periodo_mant_25` text DEFAULT NULL,
+  `cuota_25` int(5) DEFAULT NULL,
+  `fecha_recep_25` date DEFAULT NULL,
+  `n_acta_25` text DEFAULT NULL,
+  `fech_emisi_acta_25` date DEFAULT NULL,
+  `folio_25` int(10) DEFAULT NULL,
+  `estado_pago_25` text DEFAULT NULL,
+  `orden_compra_26` text DEFAULT NULL,
+  `fecha_oc_26` date DEFAULT NULL,
+  `total_oc_26` int(11) DEFAULT NULL,
+  `consumo_oc_26` int(11) DEFAULT NULL,
+  `saldo_oc_26` int(11) DEFAULT NULL,
+  `fecha_factura_26` date DEFAULT NULL,
+  `n_factura_26` int(11) DEFAULT NULL,
+  `valor_factura_26` int(11) DEFAULT NULL,
+  `observacion_26` text DEFAULT NULL,
+  `periodo_mant_26` text DEFAULT NULL,
+  `cuota_26` int(5) DEFAULT NULL,
+  `fecha_recep_26` date DEFAULT NULL,
+  `n_acta_26` text DEFAULT NULL,
+  `fech_emisi_acta_26` date DEFAULT NULL,
+  `folio_26` int(10) DEFAULT NULL,
+  `estado_pago_26` text DEFAULT NULL,
+  `orden_compra_27` text DEFAULT NULL,
+  `fecha_oc_27` date DEFAULT NULL,
+  `total_oc_27` int(11) DEFAULT NULL,
+  `consumo_oc_27` int(11) DEFAULT NULL,
+  `saldo_oc_27` int(11) DEFAULT NULL,
+  `fecha_factura_27` date DEFAULT NULL,
+  `n_factura_27` int(11) DEFAULT NULL,
+  `valor_factura_27` int(11) DEFAULT NULL,
+  `observacion_27` text DEFAULT NULL,
+  `periodo_mant_27` text DEFAULT NULL,
+  `cuota_27` int(5) DEFAULT NULL,
+  `fecha_recep_27` date DEFAULT NULL,
+  `n_acta_27` text DEFAULT NULL,
+  `fech_emisi_acta_27` date DEFAULT NULL,
+  `folio_27` int(10) DEFAULT NULL,
+  `estado_pago_27` text DEFAULT NULL,
+  `orden_compra_28` text DEFAULT NULL,
+  `fecha_oc_28` date DEFAULT NULL,
+  `total_oc_28` int(11) DEFAULT NULL,
+  `consumo_oc_28` int(11) DEFAULT NULL,
+  `saldo_oc_28` int(11) DEFAULT NULL,
+  `fecha_factura_28` date DEFAULT NULL,
+  `n_factura_28` int(11) DEFAULT NULL,
+  `valor_factura_28` int(11) DEFAULT NULL,
+  `observacion_28` text DEFAULT NULL,
+  `periodo_mant_28` text DEFAULT NULL,
+  `cuota_28` int(5) DEFAULT NULL,
+  `fecha_recep_28` date DEFAULT NULL,
+  `n_acta_28` text DEFAULT NULL,
+  `fech_emisi_acta_28` date DEFAULT NULL,
+  `folio_28` int(10) DEFAULT NULL,
+  `estado_pago_28` text DEFAULT NULL,
+  `orden_compra_29` text DEFAULT NULL,
+  `fecha_oc_29` date DEFAULT NULL,
+  `total_oc_29` int(11) DEFAULT NULL,
+  `consumo_oc_29` int(11) DEFAULT NULL,
+  `saldo_oc_29` int(11) DEFAULT NULL,
+  `fecha_factura_29` date DEFAULT NULL,
+  `n_factura_29` int(11) DEFAULT NULL,
+  `valor_factura_29` int(11) DEFAULT NULL,
+  `observacion_29` text DEFAULT NULL,
+  `periodo_mant_29` text DEFAULT NULL,
+  `cuota_29` int(5) DEFAULT NULL,
+  `fecha_recep_29` date DEFAULT NULL,
+  `n_acta_29` text DEFAULT NULL,
+  `fech_emisi_acta_29` date DEFAULT NULL,
+  `folio_29` int(10) DEFAULT NULL,
+  `estado_pago_29` text DEFAULT NULL,
+  `orden_compra_30` text DEFAULT NULL,
+  `fecha_oc_30` date DEFAULT NULL,
+  `total_oc_30` int(11) DEFAULT NULL,
+  `consumo_oc_30` int(11) DEFAULT NULL,
+  `saldo_oc_30` int(11) DEFAULT NULL,
+  `fecha_factura_30` date DEFAULT NULL,
+  `n_factura_30` int(11) DEFAULT NULL,
+  `valor_factura_30` int(11) DEFAULT NULL,
+  `observacion_30` text DEFAULT NULL,
+  `periodo_mant_30` text DEFAULT NULL,
+  `cuota_30` int(5) DEFAULT NULL,
+  `fecha_recep_30` date DEFAULT NULL,
+  `n_acta_30` text DEFAULT NULL,
+  `fech_emisi_acta_30` date DEFAULT NULL,
+  `folio_30` int(10) DEFAULT NULL,
+  `estado_pago_30` text DEFAULT NULL,
+  `orden_compra_31` text DEFAULT NULL,
+  `fecha_oc_31` date DEFAULT NULL,
+  `total_oc_31` int(11) DEFAULT NULL,
+  `consumo_oc_31` int(11) DEFAULT NULL,
+  `saldo_oc_31` int(11) DEFAULT NULL,
+  `fecha_factura_31` date DEFAULT NULL,
+  `n_factura_31` int(11) DEFAULT NULL,
+  `valor_factura_31` int(11) DEFAULT NULL,
+  `observacion_31` text DEFAULT NULL,
+  `periodo_mant_31` text DEFAULT NULL,
+  `cuota_31` int(5) DEFAULT NULL,
+  `fecha_recep_31` date DEFAULT NULL,
+  `n_acta_31` text DEFAULT NULL,
+  `fech_emisi_acta_31` date DEFAULT NULL,
+  `folio_31` int(10) DEFAULT NULL,
+  `estado_pago_31` text DEFAULT NULL,
+  `orden_compra_32` text DEFAULT NULL,
+  `fecha_oc_32` date DEFAULT NULL,
+  `total_oc_32` int(11) DEFAULT NULL,
+  `consumo_oc_32` int(11) DEFAULT NULL,
+  `saldo_oc_32` int(11) DEFAULT NULL,
+  `fecha_factura_32` date DEFAULT NULL,
+  `n_factura_32` int(11) DEFAULT NULL,
+  `valor_factura_32` int(11) DEFAULT NULL,
+  `observacion_32` text DEFAULT NULL,
+  `periodo_mant_32` text DEFAULT NULL,
+  `cuota_32` int(5) DEFAULT NULL,
+  `fecha_recep_32` date DEFAULT NULL,
+  `n_acta_32` text DEFAULT NULL,
+  `fech_emisi_acta_32` date DEFAULT NULL,
+  `folio_32` int(10) DEFAULT NULL,
+  `estado_pago_32` text DEFAULT NULL,
+  `orden_compra_33` text DEFAULT NULL,
+  `fecha_oc_33` date DEFAULT NULL,
+  `total_oc_33` int(11) DEFAULT NULL,
+  `consumo_oc_33` int(11) DEFAULT NULL,
+  `saldo_oc_33` int(11) DEFAULT NULL,
+  `fecha_factura_33` date DEFAULT NULL,
+  `n_factura_33` int(11) DEFAULT NULL,
+  `valor_factura_33` int(11) DEFAULT NULL,
+  `observacion_33` text DEFAULT NULL,
+  `periodo_mant_33` text DEFAULT NULL,
+  `cuota_33` int(5) DEFAULT NULL,
+  `fecha_recep_33` date DEFAULT NULL,
+  `n_acta_33` text DEFAULT NULL,
+  `fech_emisi_acta_33` date DEFAULT NULL,
+  `folio_33` int(10) DEFAULT NULL,
+  `estado_pago_33` text DEFAULT NULL,
+  `orden_compra_34` text DEFAULT NULL,
+  `fecha_oc_34` date DEFAULT NULL,
+  `total_oc_34` int(11) DEFAULT NULL,
+  `consumo_oc_34` int(11) DEFAULT NULL,
+  `saldo_oc_34` int(11) DEFAULT NULL,
+  `fecha_factura_34` date DEFAULT NULL,
+  `n_factura_34` int(11) DEFAULT NULL,
+  `valor_factura_34` int(11) DEFAULT NULL,
+  `observacion_34` text DEFAULT NULL,
+  `periodo_mant_34` text DEFAULT NULL,
+  `cuota_34` int(5) DEFAULT NULL,
+  `fecha_recep_34` date DEFAULT NULL,
+  `n_acta_34` text DEFAULT NULL,
+  `fech_emisi_acta_34` date DEFAULT NULL,
+  `folio_34` int(10) DEFAULT NULL,
+  `estado_pago_34` text DEFAULT NULL,
+  `orden_compra_35` text DEFAULT NULL,
+  `fecha_oc_35` date DEFAULT NULL,
+  `total_oc_35` int(11) DEFAULT NULL,
+  `consumo_oc_35` int(11) DEFAULT NULL,
+  `saldo_oc_35` int(11) DEFAULT NULL,
+  `fecha_factura_35` date DEFAULT NULL,
+  `n_factura_35` int(11) DEFAULT NULL,
+  `valor_factura_35` int(11) DEFAULT NULL,
+  `observacion_35` text DEFAULT NULL,
+  `periodo_mant_35` text DEFAULT NULL,
+  `cuota_35` int(5) DEFAULT NULL,
+  `fecha_recep_35` date DEFAULT NULL,
+  `n_acta_35` text DEFAULT NULL,
+  `fech_emisi_acta_35` date DEFAULT NULL,
+  `folio_35` int(10) DEFAULT NULL,
+  `estado_pago_35` text DEFAULT NULL,
+  `orden_compra_36` text DEFAULT NULL,
+  `fecha_oc_36` date DEFAULT NULL,
+  `total_oc_36` int(11) DEFAULT NULL,
+  `consumo_oc_36` int(11) DEFAULT NULL,
+  `saldo_oc_36` int(11) DEFAULT NULL,
+  `fecha_factura_36` date DEFAULT NULL,
+  `n_factura_36` int(11) DEFAULT NULL,
+  `valor_factura_36` int(11) DEFAULT NULL,
+  `observacion_36` text DEFAULT NULL,
+  `periodo_mant_36` text DEFAULT NULL,
+  `cuota_36` int(5) DEFAULT NULL,
+  `fecha_recep_36` date DEFAULT NULL,
+  `n_acta_36` text DEFAULT NULL,
+  `fech_emisi_acta_36` date DEFAULT NULL,
+  `folio_36` int(10) DEFAULT NULL,
+  `estado_pago_36` text DEFAULT NULL,
+  `ref_tec_1` varchar(50) DEFAULT NULL,
+  `ref_tec_2` varchar(50) DEFAULT NULL,
+  `ref_tec_3` varchar(50) DEFAULT NULL,
+  `ref_tec_4` varchar(50) DEFAULT NULL,
+  `estado` int(11) DEFAULT NULL,
+  `item` varchar(15) DEFAULT NULL,
+  `acreditacion` varchar(10) DEFAULT NULL,
+  `gasto_acredi_2021` int(10) DEFAULT NULL,
+  `gasto_acredi_2022` int(10) DEFAULT NULL,
+  `gasto_acredi_2023` int(10) DEFAULT NULL,
+  `gasto_acredi_2024` int(10) DEFAULT NULL,
+  `pagado_2021` int(10) DEFAULT NULL,
+  `devengado_2021` int(10) DEFAULT NULL,
+  `por_deveng_2021` int(10) DEFAULT NULL,
+  `pagado_2022` int(10) DEFAULT NULL,
+  `devengado_2022` int(10) DEFAULT NULL,
+  `por_deveng_2022` int(10) DEFAULT NULL,
+  `pagado_2023` int(10) DEFAULT NULL,
+  `devengado_2023` int(10) DEFAULT NULL,
+  `por_deveng_2023` int(10) DEFAULT NULL,
+  `pagado_2024` int(10) DEFAULT NULL,
+  `devengado_2024` int(10) DEFAULT NULL,
+  `por_deveng_2024` int(10) DEFAULT NULL,
+  `boleta_garantia` int(10) DEFAULT NULL,
+  `vencimiento_boleta` date DEFAULT NULL,
+  `valor_boleta_garnt` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `convenios`
+--
+
+INSERT INTO `convenios` (`id_convenio`, `unidad`, `sub_depto`, `cod_de_serv`, `detalle_convenio`, `id_licitacion`, `ordinario`, `fecha_ordinario`, `resolu_base_tec`, `fecha_base_tec`, `resolu_adjudicacion`, `fecha_resolu_adjudi`, `resolu_contrato`, `fecha_resolu_contra`, `servicio`, `rut`, `empresa`, `total_convenio`, `saldo_convenio`, `fecha_inicio`, `fecha_termino`, `dias_para_termino`, `total_cuotas`, `duracion_meses`, `saldo_en_meses`, `saldo_conexo`, `resolu_conexo`, `fecha_resu_conexo`, `peridiocidad`, `orden_compra_1`, `fecha_oc_1`, `total_oc_1`, `consumo_oc_1`, `saldo_oc_1`, `fecha_factura_1`, `n_factura_1`, `valor_factura_1`, `observacion_1`, `periodo_mant_1`, `cuota_1`, `fecha_recep_1`, `n_acta_1`, `fech_emisi_acta_1`, `folio_1`, `estado_pago_1`, `orden_compra_2`, `fecha_oc_2`, `total_oc_2`, `consumo_oc_2`, `saldo_oc_2`, `fecha_factura_2`, `n_factura_2`, `valor_factura_2`, `observacion_2`, `periodo_mant_2`, `cuota_2`, `fecha_recep_2`, `n_acta_2`, `fech_emisi_acta_2`, `folio_2`, `estado_pago_2`, `orden_compra_3`, `fecha_oc_3`, `total_oc_3`, `consumo_oc_3`, `saldo_oc_3`, `fecha_factura_3`, `n_factura_3`, `valor_factura_3`, `observacion_3`, `periodo_mant_3`, `cuota_3`, `fecha_recep_3`, `n_acta_3`, `fech_emisi_acta_3`, `folio_3`, `estado_pago_3`, `orden_compra_4`, `fecha_oc_4`, `total_oc_4`, `consumo_oc_4`, `saldo_oc_4`, `fecha_factura_4`, `n_factura_4`, `valor_factura_4`, `observacion_4`, `periodo_mant_4`, `cuota_4`, `fecha_recep_4`, `n_acta_4`, `fech_emisi_acta_4`, `folio_4`, `estado_pago_4`, `orden_compra_5`, `fecha_oc_5`, `total_oc_5`, `consumo_oc_5`, `saldo_oc_5`, `fecha_factura_5`, `n_factura_5`, `valor_factura_5`, `observacion_5`, `periodo_mant_5`, `cuota_5`, `fecha_recep_5`, `n_acta_5`, `fech_emisi_acta_5`, `folio_5`, `estado_pago_5`, `orden_compra_6`, `fecha_oc_6`, `total_oc_6`, `consumo_oc_6`, `saldo_oc_6`, `fecha_factura_6`, `n_factura_6`, `valor_factura_6`, `observacion_6`, `periodo_mant_6`, `cuota_6`, `fecha_recep_6`, `n_acta_6`, `fech_emisi_acta_6`, `folio_6`, `estado_pago_6`, `orden_compra_7`, `fecha_oc_7`, `total_oc_7`, `consumo_oc_7`, `saldo_oc_7`, `fecha_factura_7`, `n_factura_7`, `valor_factura_7`, `observacion_7`, `periodo_mant_7`, `cuota_7`, `fecha_recep_7`, `n_acta_7`, `fech_emisi_acta_7`, `folio_7`, `estado_pago_7`, `orden_compra_8`, `fecha_oc_8`, `total_oc_8`, `consumo_oc_8`, `saldo_oc_8`, `fecha_factura_8`, `n_factura_8`, `valor_factura_8`, `observacion_8`, `periodo_mant_8`, `cuota_8`, `fecha_recep_8`, `n_acta_8`, `fech_emisi_acta_8`, `folio_8`, `estado_pago_8`, `orden_compra_9`, `fecha_oc_9`, `total_oc_9`, `consumo_oc_9`, `saldo_oc_9`, `fecha_factura_9`, `n_factura_9`, `valor_factura_9`, `observacion_9`, `periodo_mant_9`, `cuota_9`, `fecha_recep_9`, `n_acta_9`, `fech_emisi_acta_9`, `folio_9`, `estado_pago_9`, `orden_compra_10`, `fecha_oc_10`, `total_oc_10`, `consumo_oc_10`, `saldo_oc_10`, `fecha_factura_10`, `n_factura_10`, `valor_factura_10`, `observacion_10`, `periodo_mant_10`, `cuota_10`, `fecha_recep_10`, `n_acta_10`, `fech_emisi_acta_10`, `folio_10`, `estado_pago_10`, `orden_compra_11`, `fecha_oc_11`, `total_oc_11`, `consumo_oc_11`, `saldo_oc_11`, `fecha_factura_11`, `n_factura_11`, `valor_factura_11`, `observacion_11`, `periodo_mant_11`, `cuota_11`, `fecha_recep_11`, `n_acta_11`, `fech_emisi_acta_11`, `folio_11`, `estado_pago_11`, `orden_compra_12`, `fecha_oc_12`, `total_oc_12`, `consumo_oc_12`, `saldo_oc_12`, `fecha_factura_12`, `n_factura_12`, `valor_factura_12`, `observacion_12`, `periodo_mant_12`, `cuota_12`, `fecha_recep_12`, `n_acta_12`, `fech_emisi_acta_12`, `folio_12`, `estado_pago_12`, `orden_compra_13`, `fecha_oc_13`, `total_oc_13`, `consumo_oc_13`, `saldo_oc_13`, `fecha_factura_13`, `n_factura_13`, `valor_factura_13`, `observacion_13`, `periodo_mant_13`, `cuota_13`, `fecha_recep_13`, `n_acta_13`, `fech_emisi_acta_13`, `folio_13`, `estado_pago_13`, `orden_compra_14`, `fecha_oc_14`, `total_oc_14`, `consumo_oc_14`, `saldo_oc_14`, `fecha_factura_14`, `n_factura_14`, `valor_factura_14`, `observacion_14`, `periodo_mant_14`, `cuota_14`, `fecha_recep_14`, `n_acta_14`, `fech_emisi_acta_14`, `folio_14`, `estado_pago_14`, `orden_compra_15`, `fecha_oc_15`, `total_oc_15`, `consumo_oc_15`, `saldo_oc_15`, `fecha_factura_15`, `n_factura_15`, `valor_factura_15`, `observacion_15`, `periodo_mant_15`, `cuota_15`, `fecha_recep_15`, `n_acta_15`, `fech_emisi_acta_15`, `folio_15`, `estado_pago_15`, `orden_compra_16`, `fecha_oc_16`, `total_oc_16`, `consumo_oc_16`, `saldo_oc_16`, `fecha_factura_16`, `n_factura_16`, `valor_factura_16`, `observacion_16`, `periodo_mant_16`, `cuota_16`, `fecha_recep_16`, `n_acta_16`, `fech_emisi_acta_16`, `folio_16`, `estado_pago_16`, `orden_compra_17`, `fecha_oc_17`, `total_oc_17`, `consumo_oc_17`, `saldo_oc_17`, `fecha_factura_17`, `n_factura_17`, `valor_factura_17`, `observacion_17`, `periodo_mant_17`, `cuota_17`, `fecha_recep_17`, `n_acta_17`, `fech_emisi_acta_17`, `folio_17`, `estado_pago_17`, `orden_compra_18`, `fecha_oc_18`, `total_oc_18`, `consumo_oc_18`, `saldo_oc_18`, `fecha_factura_18`, `n_factura_18`, `valor_factura_18`, `observacion_18`, `periodo_mant_18`, `cuota_18`, `fecha_recep_18`, `n_acta_18`, `fech_emisi_acta_18`, `folio_18`, `estado_pago_18`, `orden_compra_19`, `fecha_oc_19`, `total_oc_19`, `consumo_oc_19`, `saldo_oc_19`, `fecha_factura_19`, `n_factura_19`, `valor_factura_19`, `observacion_19`, `periodo_mant_19`, `cuota_19`, `fecha_recep_19`, `n_acta_19`, `fech_emisi_acta_19`, `folio_19`, `estado_pago_19`, `orden_compra_20`, `fecha_oc_20`, `total_oc_20`, `consumo_oc_20`, `saldo_oc_20`, `fecha_factura_20`, `n_factura_20`, `valor_factura_20`, `observacion_20`, `periodo_mant_20`, `cuota_20`, `fecha_recep_20`, `n_acta_20`, `fech_emisi_acta_20`, `folio_20`, `estado_pago_20`, `orden_compra_21`, `fecha_oc_21`, `total_oc_21`, `consumo_oc_21`, `saldo_oc_21`, `fecha_factura_21`, `n_factura_21`, `valor_factura_21`, `observacion_21`, `periodo_mant_21`, `cuota_21`, `fecha_recep_21`, `n_acta_21`, `fech_emisi_acta_21`, `folio_21`, `estado_pago_21`, `orden_compra_22`, `fecha_oc_22`, `total_oc_22`, `consumo_oc_22`, `saldo_oc_22`, `fecha_factura_22`, `n_factura_22`, `valor_factura_22`, `observacion_22`, `periodo_mant_22`, `cuota_22`, `fecha_recep_22`, `n_acta_22`, `fech_emisi_acta_22`, `folio_22`, `estado_pago_22`, `orden_compra_23`, `fecha_oc_23`, `total_oc_23`, `consumo_oc_23`, `saldo_oc_23`, `fecha_factura_23`, `n_factura_23`, `valor_factura_23`, `observacion_23`, `periodo_mant_23`, `cuota_23`, `fecha_recep_23`, `n_acta_23`, `fech_emisi_acta_23`, `folio_23`, `estado_pago_23`, `orden_compra_24`, `fecha_oc_24`, `total_oc_24`, `consumo_oc_24`, `saldo_oc_24`, `fecha_factura_24`, `n_factura_24`, `valor_factura_24`, `observacion_24`, `periodo_mant_24`, `cuota_24`, `fecha_recep_24`, `n_acta_24`, `fech_emisi_acta_24`, `folio_24`, `estado_pago_24`, `orden_compra_25`, `fecha_oc_25`, `total_oc_25`, `consumo_oc_25`, `saldo_oc_25`, `fecha_factura_25`, `n_factura_25`, `valor_factura_25`, `observacion_25`, `periodo_mant_25`, `cuota_25`, `fecha_recep_25`, `n_acta_25`, `fech_emisi_acta_25`, `folio_25`, `estado_pago_25`, `orden_compra_26`, `fecha_oc_26`, `total_oc_26`, `consumo_oc_26`, `saldo_oc_26`, `fecha_factura_26`, `n_factura_26`, `valor_factura_26`, `observacion_26`, `periodo_mant_26`, `cuota_26`, `fecha_recep_26`, `n_acta_26`, `fech_emisi_acta_26`, `folio_26`, `estado_pago_26`, `orden_compra_27`, `fecha_oc_27`, `total_oc_27`, `consumo_oc_27`, `saldo_oc_27`, `fecha_factura_27`, `n_factura_27`, `valor_factura_27`, `observacion_27`, `periodo_mant_27`, `cuota_27`, `fecha_recep_27`, `n_acta_27`, `fech_emisi_acta_27`, `folio_27`, `estado_pago_27`, `orden_compra_28`, `fecha_oc_28`, `total_oc_28`, `consumo_oc_28`, `saldo_oc_28`, `fecha_factura_28`, `n_factura_28`, `valor_factura_28`, `observacion_28`, `periodo_mant_28`, `cuota_28`, `fecha_recep_28`, `n_acta_28`, `fech_emisi_acta_28`, `folio_28`, `estado_pago_28`, `orden_compra_29`, `fecha_oc_29`, `total_oc_29`, `consumo_oc_29`, `saldo_oc_29`, `fecha_factura_29`, `n_factura_29`, `valor_factura_29`, `observacion_29`, `periodo_mant_29`, `cuota_29`, `fecha_recep_29`, `n_acta_29`, `fech_emisi_acta_29`, `folio_29`, `estado_pago_29`, `orden_compra_30`, `fecha_oc_30`, `total_oc_30`, `consumo_oc_30`, `saldo_oc_30`, `fecha_factura_30`, `n_factura_30`, `valor_factura_30`, `observacion_30`, `periodo_mant_30`, `cuota_30`, `fecha_recep_30`, `n_acta_30`, `fech_emisi_acta_30`, `folio_30`, `estado_pago_30`, `orden_compra_31`, `fecha_oc_31`, `total_oc_31`, `consumo_oc_31`, `saldo_oc_31`, `fecha_factura_31`, `n_factura_31`, `valor_factura_31`, `observacion_31`, `periodo_mant_31`, `cuota_31`, `fecha_recep_31`, `n_acta_31`, `fech_emisi_acta_31`, `folio_31`, `estado_pago_31`, `orden_compra_32`, `fecha_oc_32`, `total_oc_32`, `consumo_oc_32`, `saldo_oc_32`, `fecha_factura_32`, `n_factura_32`, `valor_factura_32`, `observacion_32`, `periodo_mant_32`, `cuota_32`, `fecha_recep_32`, `n_acta_32`, `fech_emisi_acta_32`, `folio_32`, `estado_pago_32`, `orden_compra_33`, `fecha_oc_33`, `total_oc_33`, `consumo_oc_33`, `saldo_oc_33`, `fecha_factura_33`, `n_factura_33`, `valor_factura_33`, `observacion_33`, `periodo_mant_33`, `cuota_33`, `fecha_recep_33`, `n_acta_33`, `fech_emisi_acta_33`, `folio_33`, `estado_pago_33`, `orden_compra_34`, `fecha_oc_34`, `total_oc_34`, `consumo_oc_34`, `saldo_oc_34`, `fecha_factura_34`, `n_factura_34`, `valor_factura_34`, `observacion_34`, `periodo_mant_34`, `cuota_34`, `fecha_recep_34`, `n_acta_34`, `fech_emisi_acta_34`, `folio_34`, `estado_pago_34`, `orden_compra_35`, `fecha_oc_35`, `total_oc_35`, `consumo_oc_35`, `saldo_oc_35`, `fecha_factura_35`, `n_factura_35`, `valor_factura_35`, `observacion_35`, `periodo_mant_35`, `cuota_35`, `fecha_recep_35`, `n_acta_35`, `fech_emisi_acta_35`, `folio_35`, `estado_pago_35`, `orden_compra_36`, `fecha_oc_36`, `total_oc_36`, `consumo_oc_36`, `saldo_oc_36`, `fecha_factura_36`, `n_factura_36`, `valor_factura_36`, `observacion_36`, `periodo_mant_36`, `cuota_36`, `fecha_recep_36`, `n_acta_36`, `fech_emisi_acta_36`, `folio_36`, `estado_pago_36`, `ref_tec_1`, `ref_tec_2`, `ref_tec_3`, `ref_tec_4`, `estado`, `item`, `acreditacion`, `gasto_acredi_2021`, `gasto_acredi_2022`, `gasto_acredi_2023`, `gasto_acredi_2024`, `pagado_2021`, `devengado_2021`, `por_deveng_2021`, `pagado_2022`, `devengado_2022`, `por_deveng_2022`, `pagado_2023`, `devengado_2023`, `por_deveng_2023`, `pagado_2024`, `devengado_2024`, `por_deveng_2024`, `boleta_garantia`, `vencimiento_boleta`, `valor_boleta_garnt`) VALUES
+(29, 'CARPINTERIA', '02 INFRAESTRUCTURA', '1', '123', '1', '1', '2022-06-30', 1, '2022-06-25', 1, '2022-06-18', 1, '2022-06-01', NULL, '1', '1', 1, NULL, '2022-06-27', '2022-07-01', NULL, 1, 1, NULL, NULL, NULL, NULL, 'SEMANAL', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '1', '1', '1', '1', NULL, '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2022-06-17', NULL),
+(31, 'UCP', '04 SERV LOGISTICA', '2', 'Prueba numero 1', '123', '32', '2023-07-13', 12, '2023-07-29', 34, '2023-08-06', 23, '2023-07-16', '', '195549192', 'Dell', 4, NULL, '2023-04-07', '2023-07-22', 0, 4, 4, 0, NULL, 0, '0000-00-00', 'BIMENSUAL', '1', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', '', '0000-00-00', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '', 'Isaac', 'Arturo', 'Javier', 'Daniel', NULL, '2', 'No', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, '2023-07-15', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `equipamiento`
 --
 
 CREATE TABLE `equipamiento` (
@@ -1890,17 +2538,18 @@ CREATE TABLE `equipamiento` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `equipamiento`
+-- Dumping data for table `equipamiento`
 --
 
 INSERT INTO `equipamiento` (`id_relacion`, `equipos_instalaciones`, `servicio`, `sector`, `clase`, `subclase`, `def_ley_presupuesto`, `equipo`, `marca`, `modelo`, `serie`, `valor`, `num_inventario`, `ano_instalacion`, `vida_util`, `vida_util_residual`, `vida_ur_estandarizada`, `estado_conservacion`, `propiedad`, `progr_mantenimiento`, `caracteristica_acredi`, `unid_mante_hbv`, `referente_tecnico`, `periodicidad_mp`, `id_licitacion`, `inicio_garantia`, `termino_garantia`, `empresa`) VALUES
-(776, 'EQ.MEDICO', 'ABASTECIMIENTO', 'SECTOR B-43', 'APOYO DIAGNÓSTICO', 'ALTO COSTO', 'EQUIPO', 'NOTEBOOK', 'ACER', 'AC-45', '456333', 540000, '555-44', 2023, 4, 1, 2, 'BUENO', 'HBV', 'EQ-2.1', 'INCUBADORAS', 'EQUIPOS MEDICOS', 'SENKU ISHIGAMI', 'MENSUAL', '1', '2023-08-31', '2023-10-12', 'TECNIGEN S.A.'),
-(777, 'EQ.INDUSTRIAL', 'CAPACITACION', 'SEC 9B', 'MED.FÍS.REHABILITACIÓN', 'MEDIANO COSTO', 'EQUIPO', 'AUDIFONOS', 'ASUS', 'MJ-56', '34', 63995, '23', 2022, 5, 2, 3, 'MALO', 'MINSAL', 'INS-3.1', 'AUTOCLAVES', 'SERV. LOGISTICA', 'SENKU ISHIGAMI', 'TRIMESTRAL', '533', '2023-09-28', '2023-09-30', 'A&O SERV. Y CONSTRUCCIONES LTDA');
+(265, 'EQUIPAMIENTO INDUSTRIAL', 'HBV', 'CLASE B', 'APOYO DIAGNOSTICO', 'ALTO COSTO', 'EQUIPAMIENTO', 'HUMIDIFICADOR CON GENERADOR DE FLUJO INTEGRADO', 'FISHER', 'AIRVO 2 4K', '1997', 49990, '1234', 2025, 10, 1, 2, 'BUENO', 'HBV', 'EQ-2.2', 'VENTILADORES MECANICOS', 'EQUIPOS INDUSTRIALES', 'BENJAMIN SAN MARTIN', 'SEMESTRAL', 'TRATO DIRECTO', '2020-04-17', '2021-04-30', 'MEDIPLEX S.A.'),
+(772, 'EQ.MEDICO', 'ABASTECIMIENTO', '676', 'APOYO DIAGNÓSTICO', 'ALTO COSTO', 'EQUIPO', '56756', '765', '756', '756', 675, '756', 2023, 657, 76, 676, 'BUENO', 'HBV', 'EQ-2.1', 'INCUBADORAS', 'EQUIPOS MEDICOS', '76', 'SEMANAL', '76', '2023-07-16', '2023-07-28', '76'),
+(773, 'COMPONENTE', 'CONSULTORIO ADOSADO ESPECIAL', 'SEC 34', 'APOYO DIAGNÓSTICO', 'ALTO COSTO', 'EQUIPO', 'IMRPESORA', '123', 'DELL', '123', 10000, '111', 2023, 1, 2, 3, 'REGULAR', 'SSV', 'N/A', 'INCUBADORAS', 'EQUIPOS MEDICOS', 'ISAAC', 'BIMESTRAL', '45', '2023-08-05', '2023-07-28', 'DELLA');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `extintores`
+-- Table structure for table `extintores`
 --
 
 CREATE TABLE `extintores` (
@@ -1936,17 +2585,16 @@ CREATE TABLE `extintores` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `extintores`
+-- Dumping data for table `extintores`
 --
 
 INSERT INTO `extintores` (`id_extintor`, `cod_nui`, `n_inventario`, `recinto`, `edificio`, `piso`, `sala_pasillo`, `servicio_usuario`, `sector`, `tipo_extintor`, `kg`, `fecha_mantencion`, `estado`, `preg_nanometro`, `preg_certificacion`, `preg_sello_garantia`, `preg_ident_cilindro`, `preg_mants_vigentes`, `preg_lugar_visible`, `preg_senaletica_ubic`, `preg_facil_acceso`, `preg_altura_no_mayor`, `preg_etiqueta_frontal`, `preg_activado`, `preg_buena_fijacion`, `preg_pintura`, `preg_estado_general`, `preg_etiqueta_posterior`, `preg_etiqueta_serv_tec`) VALUES
-(13, '123456', '52ND', 'HBV', 'CA', 'ZOCALO', '23', 'UCI', 'SEC 45', 'DUAL', 5, '2023-08', 'BUENO', 'SI', 'NO', 'SI', 'SI', 'SI', 'NO', 'NO', 'SI', 'NO', 'SI', 'SI', 'NO', 'NO', 'NO', 'NO', 'SI'),
-(14, '455', 'N-323', 'Recinto Riell 43', 'CE2', 'ZOCALO', '2', 'Us2', '32', 'Normal', 3, '2023-08', 'REGULAR', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI');
+(13, '123456', '52ND', 'HBV', 'CA', 'ZOCALO', '23', 'UCI', 'SEC 45', 'DUAL', 5, '2023-08', 'BUENO', 'SI', 'NO', 'SI', 'SI', 'SI', 'NO', 'NO', 'SI', 'NO', 'SI', 'SI', 'NO', 'NO', 'NO', 'NO', 'SI');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `mantenciones`
+-- Table structure for table `mantenciones`
 --
 
 CREATE TABLE `mantenciones` (
@@ -1990,10 +2638,17 @@ CREATE TABLE `mantenciones` (
   `id_mantenciones_relacion` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `mantenciones`
+--
+
+INSERT INTO `mantenciones` (`id_mantenciones`, `responsable`, `correo_responsable`, `ubicacion`, `acreditacion`, `estado`, `id_licitacion_convenio`, `empresa_adjudicada`, `fecha_inicio_convenio`, `fecha_termino_convenio`, `duracion_en_meses`, `peridiocidad`, `n_mantenciones_p`, `programado_1`, `fecha_mp_1`, `programado_2`, `fecha_mp_2`, `programado_3`, `fecha_mp_3`, `programado_4`, `fecha_mp_4`, `programado_5`, `fecha_mp_5`, `programado_6`, `fecha_mp_6`, `programado_7`, `fecha_mp_7`, `programado_8`, `fecha_mp_8`, `programado_9`, `fecha_mp_9`, `programado_10`, `fecha_mp_10`, `programado_11`, `fecha_mp_11`, `programado_12`, `fecha_mp_12`, `id_mantenciones_relacion`) VALUES
+(39, 'Isaac', 'a@d.cl', 'UFRO', 'EQ-2.1', 'OPERATIVO', '123', 'Dell', '2023-07-01', '2024-05-25', 12, 'MENSUAL', 1, '2023-07', '2023-08-04', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', '', '0000-00-00', 773);
+
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `proceso_peticiones`
+-- Table structure for table `proceso_peticiones`
 --
 
 CREATE TABLE `proceso_peticiones` (
@@ -2049,6 +2704,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_1` int(15) DEFAULT NULL,
   `iva_1` int(15) DEFAULT NULL,
   `total_1` int(15) DEFAULT NULL,
+  `recep_1` int(7) DEFAULT NULL,
   `c_manager_2` int(10) DEFAULT NULL,
   `producto_2` text DEFAULT NULL,
   `detalle_compra_2` text DEFAULT NULL,
@@ -2064,6 +2720,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_2` int(15) DEFAULT NULL,
   `iva_2` int(15) DEFAULT NULL,
   `total_2` int(15) DEFAULT NULL,
+  `recep_2` int(7) DEFAULT NULL,
   `c_manager_3` int(10) DEFAULT NULL,
   `producto_3` text DEFAULT NULL,
   `detalle_compra_3` text DEFAULT NULL,
@@ -2079,6 +2736,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_3` int(15) DEFAULT NULL,
   `iva_3` int(15) DEFAULT NULL,
   `total_3` int(15) DEFAULT NULL,
+  `recep_3` int(7) DEFAULT NULL,
   `c_manager_4` int(10) DEFAULT NULL,
   `producto_4` text DEFAULT NULL,
   `detalle_compra_4` text DEFAULT NULL,
@@ -2094,6 +2752,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_4` int(15) DEFAULT NULL,
   `iva_4` int(15) DEFAULT NULL,
   `total_4` int(15) DEFAULT NULL,
+  `recep_4` int(7) DEFAULT NULL,
   `c_manager_5` int(10) DEFAULT NULL,
   `producto_5` text DEFAULT NULL,
   `detalle_compra_5` text DEFAULT NULL,
@@ -2109,6 +2768,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_5` int(15) DEFAULT NULL,
   `iva_5` int(15) DEFAULT NULL,
   `total_5` int(15) DEFAULT NULL,
+  `recep_5` int(7) DEFAULT NULL,
   `c_manager_6` int(10) DEFAULT NULL,
   `producto_6` text DEFAULT NULL,
   `detalle_compra_6` text DEFAULT NULL,
@@ -2124,6 +2784,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_6` int(15) DEFAULT NULL,
   `iva_6` int(15) DEFAULT NULL,
   `total_6` int(15) DEFAULT NULL,
+  `recep_6` int(7) DEFAULT NULL,
   `c_manager_7` int(10) DEFAULT NULL,
   `producto_7` text DEFAULT NULL,
   `detalle_compra_7` text DEFAULT NULL,
@@ -2139,6 +2800,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_7` int(15) DEFAULT NULL,
   `iva_7` int(15) DEFAULT NULL,
   `total_7` int(15) DEFAULT NULL,
+  `recep_7` int(7) DEFAULT NULL,
   `c_manager_8` int(10) DEFAULT NULL,
   `producto_8` text DEFAULT NULL,
   `detalle_compra_8` text DEFAULT NULL,
@@ -2154,6 +2816,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_8` int(15) DEFAULT NULL,
   `iva_8` int(15) DEFAULT NULL,
   `total_8` int(15) DEFAULT NULL,
+  `recep_8` int(7) DEFAULT NULL,
   `c_manager_9` int(10) DEFAULT NULL,
   `producto_9` text DEFAULT NULL,
   `detalle_compra_9` text DEFAULT NULL,
@@ -2169,6 +2832,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_9` int(15) DEFAULT NULL,
   `iva_9` int(15) DEFAULT NULL,
   `total_9` int(15) DEFAULT NULL,
+  `recep_9` int(7) DEFAULT NULL,
   `c_manager_10` int(10) DEFAULT NULL,
   `producto_10` text DEFAULT NULL,
   `detalle_compra_10` text DEFAULT NULL,
@@ -2184,6 +2848,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_10` int(15) DEFAULT NULL,
   `iva_10` int(15) DEFAULT NULL,
   `total_10` int(15) DEFAULT NULL,
+  `recep_10` int(7) DEFAULT NULL,
   `c_manager_11` int(10) DEFAULT NULL,
   `producto_11` text DEFAULT NULL,
   `detalle_compra_11` text DEFAULT NULL,
@@ -2199,6 +2864,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_11` int(15) DEFAULT NULL,
   `iva_11` int(15) DEFAULT NULL,
   `total_11` int(15) DEFAULT NULL,
+  `recep_11` int(7) DEFAULT NULL,
   `c_manager_12` int(10) DEFAULT NULL,
   `producto_12` text DEFAULT NULL,
   `detalle_compra_12` text DEFAULT NULL,
@@ -2214,6 +2880,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_12` int(15) DEFAULT NULL,
   `iva_12` int(15) DEFAULT NULL,
   `total_12` int(15) DEFAULT NULL,
+  `recep_12` int(7) DEFAULT NULL,
   `c_manager_13` int(10) DEFAULT NULL,
   `producto_13` text DEFAULT NULL,
   `detalle_compra_13` text DEFAULT NULL,
@@ -2229,6 +2896,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_13` int(15) DEFAULT NULL,
   `iva_13` int(15) DEFAULT NULL,
   `total_13` int(15) DEFAULT NULL,
+  `recep_13` int(7) DEFAULT NULL,
   `c_manager_14` int(10) DEFAULT NULL,
   `producto_14` text DEFAULT NULL,
   `detalle_compra_14` text DEFAULT NULL,
@@ -2244,6 +2912,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_14` int(15) DEFAULT NULL,
   `iva_14` int(15) DEFAULT NULL,
   `total_14` int(15) DEFAULT NULL,
+  `recep_14` int(7) DEFAULT NULL,
   `c_manager_15` int(10) DEFAULT NULL,
   `producto_15` text DEFAULT NULL,
   `detalle_compra_15` text DEFAULT NULL,
@@ -2259,6 +2928,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_15` int(15) DEFAULT NULL,
   `iva_15` int(15) DEFAULT NULL,
   `total_15` int(15) DEFAULT NULL,
+  `recep_15` int(7) DEFAULT NULL,
   `c_manager_16` int(10) DEFAULT NULL,
   `producto_16` text DEFAULT NULL,
   `detalle_compra_16` text DEFAULT NULL,
@@ -2274,6 +2944,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_16` int(15) DEFAULT NULL,
   `iva_16` int(15) DEFAULT NULL,
   `total_16` int(15) DEFAULT NULL,
+  `recep_16` int(7) DEFAULT NULL,
   `c_manager_17` int(10) DEFAULT NULL,
   `producto_17` text DEFAULT NULL,
   `detalle_compra_17` text DEFAULT NULL,
@@ -2289,6 +2960,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_17` int(15) DEFAULT NULL,
   `iva_17` int(15) DEFAULT NULL,
   `total_17` int(15) DEFAULT NULL,
+  `recep_17` int(7) DEFAULT NULL,
   `c_manager_18` int(10) DEFAULT NULL,
   `producto_18` text DEFAULT NULL,
   `detalle_compra_18` text DEFAULT NULL,
@@ -2304,6 +2976,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_18` int(15) DEFAULT NULL,
   `iva_18` int(15) DEFAULT NULL,
   `total_18` int(15) DEFAULT NULL,
+  `recep_18` int(7) DEFAULT NULL,
   `c_manager_19` int(10) DEFAULT NULL,
   `producto_19` text DEFAULT NULL,
   `detalle_compra_19` text DEFAULT NULL,
@@ -2319,6 +2992,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_19` int(15) DEFAULT NULL,
   `iva_19` int(15) DEFAULT NULL,
   `total_19` int(15) DEFAULT NULL,
+  `recep_19` int(7) DEFAULT NULL,
   `c_manager_20` int(10) DEFAULT NULL,
   `producto_20` text DEFAULT NULL,
   `detalle_compra_20` text DEFAULT NULL,
@@ -2334,6 +3008,7 @@ CREATE TABLE `proceso_peticiones` (
   `neto_20` int(15) DEFAULT NULL,
   `iva_20` int(15) DEFAULT NULL,
   `total_20` int(15) DEFAULT NULL,
+  `recep_20` int(7) DEFAULT NULL,
   `neto_gral` text DEFAULT NULL,
   `iva_gral` text DEFAULT NULL,
   `total_gral` text DEFAULT NULL,
@@ -2349,6 +3024,7 @@ CREATE TABLE `proceso_peticiones` (
   `id_licitacion` varchar(20) DEFAULT NULL,
   `resolu_contrato` int(6) DEFAULT NULL,
   `fecha_resolu_contra` date DEFAULT NULL,
+  `item_ppto_asignado` text DEFAULT NULL,
   `item_ppto_solicitado` text NOT NULL,
   `diferencia_peti` int(20) DEFAULT NULL,
   `notas` text DEFAULT NULL,
@@ -2358,6 +3034,7 @@ CREATE TABLE `proceso_peticiones` (
   `fecha_inic_gt_tec` date DEFAULT NULL,
   `fecha_term_gt_tec` date DEFAULT NULL,
   `dias_de_mora` int(6) DEFAULT NULL,
+  `procede_multa` varchar(2) DEFAULT NULL,
   `obser_recepcion` text DEFAULT NULL,
   `verificable` varchar(50) DEFAULT NULL,
   `fecha_fac` date DEFAULT NULL,
@@ -2370,16 +3047,16 @@ CREATE TABLE `proceso_peticiones` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `proceso_peticiones`
+-- Dumping data for table `proceso_peticiones`
 --
 
-INSERT INTO `proceso_peticiones` (`id_peticiones`, `ordinario`, `fecha_ordinario`, `solici_de_compra`, `fecha_soli_compra`, `referencia`, `fecha_referencia`, `exigencia`, `acreditacion`, `categoria`, `covid`, `sub_depto`, `unidad`, `ref_tec_1`, `cargo_ref_tec_1`, `ref_tec_2`, `cargo_ref_tec_2`, `serv_usuario`, `sector`, `tipo_peticion`, `descr_solicitud`, `obser_pet`, `orden_trabajo`, `tipo_compra`, `doc_adjunta`, `id_contrato_conexo`, `plazo_entrega`, `sisq`, `mp`, `mc`, `eq_2_1`, `eq_2_2`, `ins_3_1`, `ins_3_2`, `plan_expansion`, `mal_uso`, `garantia`, `c_manager_1`, `producto_1`, `detalle_compra_1`, `id_1`, `equipo_1`, `marca_1`, `modelo_1`, `serie_1`, `n_inventario_1`, `u_m_1`, `cantidad_1`, `valor_unitario_1`, `neto_1`, `iva_1`, `total_1`, `c_manager_2`, `producto_2`, `detalle_compra_2`, `id_2`, `equipo_2`, `marca_2`, `modelo_2`, `serie_2`, `n_inventario_2`, `u_m_2`, `cantidad_2`, `valor_unitario_2`, `neto_2`, `iva_2`, `total_2`, `c_manager_3`, `producto_3`, `detalle_compra_3`, `id_3`, `equipo_3`, `marca_3`, `modelo_3`, `serie_3`, `n_inventario_3`, `u_m_3`, `cantidad_3`, `valor_unitario_3`, `neto_3`, `iva_3`, `total_3`, `c_manager_4`, `producto_4`, `detalle_compra_4`, `id_4`, `equipo_4`, `marca_4`, `modelo_4`, `serie_4`, `n_inventario_4`, `u_m_4`, `cantidad_4`, `valor_unitario_4`, `neto_4`, `iva_4`, `total_4`, `c_manager_5`, `producto_5`, `detalle_compra_5`, `id_5`, `equipo_5`, `marca_5`, `modelo_5`, `serie_5`, `n_inventario_5`, `u_m_5`, `cantidad_5`, `valor_unitario_5`, `neto_5`, `iva_5`, `total_5`, `c_manager_6`, `producto_6`, `detalle_compra_6`, `id_6`, `equipo_6`, `marca_6`, `modelo_6`, `serie_6`, `n_inventario_6`, `u_m_6`, `cantidad_6`, `valor_unitario_6`, `neto_6`, `iva_6`, `total_6`, `c_manager_7`, `producto_7`, `detalle_compra_7`, `id_7`, `equipo_7`, `marca_7`, `modelo_7`, `serie_7`, `n_inventario_7`, `u_m_7`, `cantidad_7`, `valor_unitario_7`, `neto_7`, `iva_7`, `total_7`, `c_manager_8`, `producto_8`, `detalle_compra_8`, `id_8`, `equipo_8`, `marca_8`, `modelo_8`, `serie_8`, `n_inventario_8`, `u_m_8`, `cantidad_8`, `valor_unitario_8`, `neto_8`, `iva_8`, `total_8`, `c_manager_9`, `producto_9`, `detalle_compra_9`, `id_9`, `equipo_9`, `marca_9`, `modelo_9`, `serie_9`, `n_inventario_9`, `u_m_9`, `cantidad_9`, `valor_unitario_9`, `neto_9`, `iva_9`, `total_9`, `c_manager_10`, `producto_10`, `detalle_compra_10`, `id_10`, `equipo_10`, `marca_10`, `modelo_10`, `serie_10`, `n_inventario_10`, `u_m_10`, `cantidad_10`, `valor_unitario_10`, `neto_10`, `iva_10`, `total_10`, `c_manager_11`, `producto_11`, `detalle_compra_11`, `id_11`, `equipo_11`, `marca_11`, `modelo_11`, `serie_11`, `n_inventario_11`, `u_m_11`, `cantidad_11`, `valor_unitario_11`, `neto_11`, `iva_11`, `total_11`, `c_manager_12`, `producto_12`, `detalle_compra_12`, `id_12`, `equipo_12`, `marca_12`, `modelo_12`, `serie_12`, `n_inventario_12`, `u_m_12`, `cantidad_12`, `valor_unitario_12`, `neto_12`, `iva_12`, `total_12`, `c_manager_13`, `producto_13`, `detalle_compra_13`, `id_13`, `equipo_13`, `marca_13`, `modelo_13`, `serie_13`, `n_inventario_13`, `u_m_13`, `cantidad_13`, `valor_unitario_13`, `neto_13`, `iva_13`, `total_13`, `c_manager_14`, `producto_14`, `detalle_compra_14`, `id_14`, `equipo_14`, `marca_14`, `modelo_14`, `serie_14`, `n_inventario_14`, `u_m_14`, `cantidad_14`, `valor_unitario_14`, `neto_14`, `iva_14`, `total_14`, `c_manager_15`, `producto_15`, `detalle_compra_15`, `id_15`, `equipo_15`, `marca_15`, `modelo_15`, `serie_15`, `n_inventario_15`, `u_m_15`, `cantidad_15`, `valor_unitario_15`, `neto_15`, `iva_15`, `total_15`, `c_manager_16`, `producto_16`, `detalle_compra_16`, `id_16`, `equipo_16`, `marca_16`, `modelo_16`, `serie_16`, `n_inventario_16`, `u_m_16`, `cantidad_16`, `valor_unitario_16`, `neto_16`, `iva_16`, `total_16`, `c_manager_17`, `producto_17`, `detalle_compra_17`, `id_17`, `equipo_17`, `marca_17`, `modelo_17`, `serie_17`, `n_inventario_17`, `u_m_17`, `cantidad_17`, `valor_unitario_17`, `neto_17`, `iva_17`, `total_17`, `c_manager_18`, `producto_18`, `detalle_compra_18`, `id_18`, `equipo_18`, `marca_18`, `modelo_18`, `serie_18`, `n_inventario_18`, `u_m_18`, `cantidad_18`, `valor_unitario_18`, `neto_18`, `iva_18`, `total_18`, `c_manager_19`, `producto_19`, `detalle_compra_19`, `id_19`, `equipo_19`, `marca_19`, `modelo_19`, `serie_19`, `n_inventario_19`, `u_m_19`, `cantidad_19`, `valor_unitario_19`, `neto_19`, `iva_19`, `total_19`, `c_manager_20`, `producto_20`, `detalle_compra_20`, `id_20`, `equipo_20`, `marca_20`, `modelo_20`, `serie_20`, `n_inventario_20`, `u_m_20`, `cantidad_20`, `valor_unitario_20`, `neto_20`, `iva_20`, `total_20`, `neto_gral`, `iva_gral`, `total_gral`, `rut`, `empresa`, `orden_compra`, `fecha_oc`, `monto_oc`, `resolu_base_tec`, `fecha_base_tec`, `resolu_adjudi`, `fecha_resolu_adjudi`, `id_licitacion`, `resolu_contrato`, `fecha_resolu_contra`, `item_ppto_solicitado`, `diferencia_peti`, `notas`, `fecha_recep`, `fecha_inicio`, `fecha_termino`, `fecha_inic_gt_tec`, `fecha_term_gt_tec`, `dias_de_mora`, `obser_recepcion`, `verificable`, `fecha_fac`, `n_factura`, `n_acta`, `fecha_acta`, `folio_core`, `fecha_folio`, `estado_peti`) VALUES
-(107, NULL, NULL, NULL, NULL, NULL, NULL, 'URGENTE', 'NO', 'INSTRUMENTAL', 'SI', 'apoyo_hospitalario', 'LAVANDERIA', 'SENKU ISHIGAMI', 'ING.CIVIL BIOMEDICO', 'NARUTO UZUMAKI', 'ING.EQUIPOS INDUSTRIALES', 'UNIDAD CENTRAL DE PRODUCCION', 'Sec', 'PROYECTO', 'no', 'no', 2, 'LICITACION PUBLICA', 'TERMINOS DE REFERENCIA Y COTIZACION', '2', '32', '', 'SI', 'SI', 'SI', 'NO', 'SI', 'SI', 'NO', 'SI', '2', 14, 'Registro No Encontrado', 'no', 777, 'AUDIFONOS', 'ASUS', 'MJ-56', '34', '23', 'METROS', 2, 1000, 2000, 380, 2380, 25, 'Registro No Encontrado', 'hay', 777, 'AUDIFONOS', 'ASUS', 'MJ-56', '34', '23', 'KILOS', 2, 8000, 16000, 3040, 19040, 32, 'Registro No Encontrado', 'detalle', 777, 'AUDIFONOS', 'ASUS', 'MJ-56', '34', '23', 'LITROS', 2, 2000, 4000, 760, 4760, 41, 'Registro No Encontrado', 'compra', 777, 'AUDIFONOS', 'ASUS', 'MJ-56', '34', '23', 'BOLSA', 2, 2000, 4000, 760, 4760, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'UNIDAD', 0, 0, 0, 0, 0, '$NaN', '$NaN', '$NaN', '76961393-5', 'A&O SERV. Y CONSTRUCCIONES LTDA', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '22-04-010-000', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `proceso_peticiones` (`id_peticiones`, `ordinario`, `fecha_ordinario`, `solici_de_compra`, `fecha_soli_compra`, `referencia`, `fecha_referencia`, `exigencia`, `acreditacion`, `categoria`, `covid`, `sub_depto`, `unidad`, `ref_tec_1`, `cargo_ref_tec_1`, `ref_tec_2`, `cargo_ref_tec_2`, `serv_usuario`, `sector`, `tipo_peticion`, `descr_solicitud`, `obser_pet`, `orden_trabajo`, `tipo_compra`, `doc_adjunta`, `id_contrato_conexo`, `plazo_entrega`, `sisq`, `mp`, `mc`, `eq_2_1`, `eq_2_2`, `ins_3_1`, `ins_3_2`, `plan_expansion`, `mal_uso`, `garantia`, `c_manager_1`, `producto_1`, `detalle_compra_1`, `id_1`, `equipo_1`, `marca_1`, `modelo_1`, `serie_1`, `n_inventario_1`, `u_m_1`, `cantidad_1`, `valor_unitario_1`, `neto_1`, `iva_1`, `total_1`, `recep_1`, `c_manager_2`, `producto_2`, `detalle_compra_2`, `id_2`, `equipo_2`, `marca_2`, `modelo_2`, `serie_2`, `n_inventario_2`, `u_m_2`, `cantidad_2`, `valor_unitario_2`, `neto_2`, `iva_2`, `total_2`, `recep_2`, `c_manager_3`, `producto_3`, `detalle_compra_3`, `id_3`, `equipo_3`, `marca_3`, `modelo_3`, `serie_3`, `n_inventario_3`, `u_m_3`, `cantidad_3`, `valor_unitario_3`, `neto_3`, `iva_3`, `total_3`, `recep_3`, `c_manager_4`, `producto_4`, `detalle_compra_4`, `id_4`, `equipo_4`, `marca_4`, `modelo_4`, `serie_4`, `n_inventario_4`, `u_m_4`, `cantidad_4`, `valor_unitario_4`, `neto_4`, `iva_4`, `total_4`, `recep_4`, `c_manager_5`, `producto_5`, `detalle_compra_5`, `id_5`, `equipo_5`, `marca_5`, `modelo_5`, `serie_5`, `n_inventario_5`, `u_m_5`, `cantidad_5`, `valor_unitario_5`, `neto_5`, `iva_5`, `total_5`, `recep_5`, `c_manager_6`, `producto_6`, `detalle_compra_6`, `id_6`, `equipo_6`, `marca_6`, `modelo_6`, `serie_6`, `n_inventario_6`, `u_m_6`, `cantidad_6`, `valor_unitario_6`, `neto_6`, `iva_6`, `total_6`, `recep_6`, `c_manager_7`, `producto_7`, `detalle_compra_7`, `id_7`, `equipo_7`, `marca_7`, `modelo_7`, `serie_7`, `n_inventario_7`, `u_m_7`, `cantidad_7`, `valor_unitario_7`, `neto_7`, `iva_7`, `total_7`, `recep_7`, `c_manager_8`, `producto_8`, `detalle_compra_8`, `id_8`, `equipo_8`, `marca_8`, `modelo_8`, `serie_8`, `n_inventario_8`, `u_m_8`, `cantidad_8`, `valor_unitario_8`, `neto_8`, `iva_8`, `total_8`, `recep_8`, `c_manager_9`, `producto_9`, `detalle_compra_9`, `id_9`, `equipo_9`, `marca_9`, `modelo_9`, `serie_9`, `n_inventario_9`, `u_m_9`, `cantidad_9`, `valor_unitario_9`, `neto_9`, `iva_9`, `total_9`, `recep_9`, `c_manager_10`, `producto_10`, `detalle_compra_10`, `id_10`, `equipo_10`, `marca_10`, `modelo_10`, `serie_10`, `n_inventario_10`, `u_m_10`, `cantidad_10`, `valor_unitario_10`, `neto_10`, `iva_10`, `total_10`, `recep_10`, `c_manager_11`, `producto_11`, `detalle_compra_11`, `id_11`, `equipo_11`, `marca_11`, `modelo_11`, `serie_11`, `n_inventario_11`, `u_m_11`, `cantidad_11`, `valor_unitario_11`, `neto_11`, `iva_11`, `total_11`, `recep_11`, `c_manager_12`, `producto_12`, `detalle_compra_12`, `id_12`, `equipo_12`, `marca_12`, `modelo_12`, `serie_12`, `n_inventario_12`, `u_m_12`, `cantidad_12`, `valor_unitario_12`, `neto_12`, `iva_12`, `total_12`, `recep_12`, `c_manager_13`, `producto_13`, `detalle_compra_13`, `id_13`, `equipo_13`, `marca_13`, `modelo_13`, `serie_13`, `n_inventario_13`, `u_m_13`, `cantidad_13`, `valor_unitario_13`, `neto_13`, `iva_13`, `total_13`, `recep_13`, `c_manager_14`, `producto_14`, `detalle_compra_14`, `id_14`, `equipo_14`, `marca_14`, `modelo_14`, `serie_14`, `n_inventario_14`, `u_m_14`, `cantidad_14`, `valor_unitario_14`, `neto_14`, `iva_14`, `total_14`, `recep_14`, `c_manager_15`, `producto_15`, `detalle_compra_15`, `id_15`, `equipo_15`, `marca_15`, `modelo_15`, `serie_15`, `n_inventario_15`, `u_m_15`, `cantidad_15`, `valor_unitario_15`, `neto_15`, `iva_15`, `total_15`, `recep_15`, `c_manager_16`, `producto_16`, `detalle_compra_16`, `id_16`, `equipo_16`, `marca_16`, `modelo_16`, `serie_16`, `n_inventario_16`, `u_m_16`, `cantidad_16`, `valor_unitario_16`, `neto_16`, `iva_16`, `total_16`, `recep_16`, `c_manager_17`, `producto_17`, `detalle_compra_17`, `id_17`, `equipo_17`, `marca_17`, `modelo_17`, `serie_17`, `n_inventario_17`, `u_m_17`, `cantidad_17`, `valor_unitario_17`, `neto_17`, `iva_17`, `total_17`, `recep_17`, `c_manager_18`, `producto_18`, `detalle_compra_18`, `id_18`, `equipo_18`, `marca_18`, `modelo_18`, `serie_18`, `n_inventario_18`, `u_m_18`, `cantidad_18`, `valor_unitario_18`, `neto_18`, `iva_18`, `total_18`, `recep_18`, `c_manager_19`, `producto_19`, `detalle_compra_19`, `id_19`, `equipo_19`, `marca_19`, `modelo_19`, `serie_19`, `n_inventario_19`, `u_m_19`, `cantidad_19`, `valor_unitario_19`, `neto_19`, `iva_19`, `total_19`, `recep_19`, `c_manager_20`, `producto_20`, `detalle_compra_20`, `id_20`, `equipo_20`, `marca_20`, `modelo_20`, `serie_20`, `n_inventario_20`, `u_m_20`, `cantidad_20`, `valor_unitario_20`, `neto_20`, `iva_20`, `total_20`, `recep_20`, `neto_gral`, `iva_gral`, `total_gral`, `rut`, `empresa`, `orden_compra`, `fecha_oc`, `monto_oc`, `resolu_base_tec`, `fecha_base_tec`, `resolu_adjudi`, `fecha_resolu_adjudi`, `id_licitacion`, `resolu_contrato`, `fecha_resolu_contra`, `item_ppto_asignado`, `item_ppto_solicitado`, `diferencia_peti`, `notas`, `fecha_recep`, `fecha_inicio`, `fecha_termino`, `fecha_inic_gt_tec`, `fecha_term_gt_tec`, `dias_de_mora`, `procede_multa`, `obser_recepcion`, `verificable`, `fecha_fac`, `n_factura`, `n_acta`, `fecha_acta`, `folio_core`, `fecha_folio`, `estado_peti`) VALUES
+(102, 1, '2022-05-02', 1, '2022-05-07', 10, '2022-05-13', 'NORMAL', 'NO', 'EQUIPAMIENTO', 'NO', 'infraestructura', 'CARPINTERIA', 'FABIAN FLANDEZ', 'TECNICO EQ. MEDICOS', 'GRECIA SANCHEZ MACHO', 'ING. CIVIL BIOMEDICO', 'UNIDAD CENTRAL DE PRODUCCION', 'sec 1', 'PROYECTO', 'No hay descripcion', 'No hay observaciones', 1997, 'LICITACION PUBLICA', 'TERMINOS DE REFERENCIA', '12345678912345678912', '1', '', 'NO', 'SI', 'SI', 'SI', 'SI', 'SI', 'SI', 'NO', '3', 1, 'Registro No Encontrado', 'NO', 265, 'HUMIDIFICADOR CON GENERADOR DE FLUJO INTEGRADO', 'FISHER', 'AIRVO 2 4K', '1997', '1234', 'GALONES', 3, 1000000, 3000000, 570000, 3570000, NULL, 2, 'Registro No Encontrado', 'SI', 265, 'HUMIDIFICADOR CON GENERADOR DE FLUJO INTEGRADO', 'FISHER', 'AIRVO 2 4K', '1997', '1234', 'METROS', 4, 60000, 240000, 45600, 285600, NULL, 3, 'Registro No Encontrado', 'SI', 265, 'HUMIDIFICADOR CON GENERADOR DE FLUJO INTEGRADO', 'FISHER', 'AIRVO 2 4K', '1997', '1234', 'KILOS', 5, 40000, 200000, 38000, 238000, NULL, 4, 'Registro No Encontrado', 'NO', 265, 'HUMIDIFICADOR CON GENERADOR DE FLUJO INTEGRADO', 'FISHER', 'AIRVO 2 4K', '1997', '1234', 'LITROS', 6, 30000, 180000, 34200, 214200, NULL, 5, 'Registro No Encontrado', 'SI', 265, 'HUMIDIFICADOR CON GENERADOR DE FLUJO INTEGRADO', 'FISHER', 'AIRVO 2 4K', '1997', '1234', 'TINETAS', 7, 20000, 140000, 26600, 166600, NULL, 6, 'Registro No Encontrado', '', NULL, NULL, NULL, NULL, NULL, NULL, 'ROLLO', 8, 444440, 3555520, 675549, 4231069, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'BOLSA', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'KIT', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'SET', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'TIRAS', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'CAJAS', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'RESMA', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'GALONES', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'PARES', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'M3', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'M2', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'METROS', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'KILOS', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'LITROS', 0, 0, 0, 0, 0, NULL, 0, '', '', NULL, NULL, NULL, NULL, NULL, NULL, 'TINETAS', 0, 0, 0, 0, 0, NULL, '$7.315.520', '$1.389.949', '$8.705.469', '78931720-8', 'COMERC. E INDUSTRIAL INQUINAT CHILE LTDA.', '14', '2022-06-15', 16444, NULL, NULL, NULL, NULL, '12345', NULL, NULL, NULL, '22-04-008-000', NULL, NULL, '2022-06-20', '2022-06-23', '2022-06-24', '2022-06-26', '2022-06-27', 25, NULL, '18 prueba', '19', '2022-06-29', 28, 21, '2022-06-22', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `recepcion`
+-- Table structure for table `recepcion`
 --
 
 CREATE TABLE `recepcion` (
@@ -2443,16 +3120,16 @@ CREATE TABLE `recepcion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `recepcion`
+-- Dumping data for table `recepcion`
 --
 
 INSERT INTO `recepcion` (`id_recepcion`, `ano_fabrica`, `financiamiento`, `producto_solicitado`, `requerimiento_tecnico`, `nombre_proyecto`, `decreto`, `fecha_decreto`, `resolucion_especi_tec`, `fecha_resolu_especi_tec`, `resolucion_adjudicacion`, `fecha_de_adjudi`, `resolucion_contrato`, `fecha_resolu_contrato`, `tipo_de_compra`, `orden_compra`, `fecha_orden_compra`, `detalle_orden_compra`, `plazo_entrega`, `tipo_de_dias`, `fecha_entrega`, `rut`, `proveedor`, `numero_acta`, `fecha_recepcion_parcial`, `fecha_puesta_marcha`, `fecha_recepcion_final`, `capacitacion`, `fecha_capacitacion`, `garantia_fabricante`, `fecha_inicio_garanti_fabricante`, `fecha_termino_garanti_fabricante`, `mantenciones_en_garantia`, `periodo_mantenci_garanti`, `verificable_entrega`, `fecha_verificable`, `ref_tecnico_recepcion`, `ref_tecnico_clinico`, `ref_tecnico_mantencion_1`, `ref_tecnico_mantencion_2`, `ref_tecnico_mantencion_3`, `ref_tecnico_externo`, `otro_referente_1`, `otro_referente_2`, `accesorio_1`, `accesorio_2`, `accesorio_3`, `accesorio_4`, `accesorio_5`, `accesorio_6`, `accesorio_7`, `accesorio_8`, `accesorio_9`, `accesorio_10`, `observaciones`, `cantidad`, `relacion_id`) VALUES
-(44, 2022, 'DONACION', 'Notebook', 'No hay', 'P.Nueva Oportunidad', '4333', '2023-09-10', 1, '2023-09-13', 2, '2023-09-28', 3, '2023-10-05', 'TRATO DIRECTO', '3334', '2023-09-24', 'Compra Agil', 3, 'DIAS CORRIDOS', '2023-09-30', '15.777.633-2', 'AGUASIN SPA', '5', '2023-09-12', '2023-09-24', '2023-09-21', 'SI', '2023-10-07', '5', '2023-09-15', '2023-09-30', 4, '4', '4', '2023-09-17', 'Arturo', 'Raul', 'NARUTO UZUMAKI', 'SENKU ISHIGAMI', 'IPPO MAKUNOUCHI', 'Andrea', 'Gabriel', 'No', '2', '2', '2', '2', '3', '3', '3', '3', '3', '3', 'No hay', 1, 776);
+(30, 2019, 'GORE', 'EQUIPO DE OXIGENOTERAPIA ALTO FLUJO', 'EQUIPO ALTO FLUJO NASAL - HUMIDIFICADOR REF. FPPT101EW', 'ADQUISICION DE BIENES BAJO MODALIDAD TRATO DIRECTO, CONTRATACION DIRECTA Y CONVENIO MARCO DE VEHICUL', '370', '2020-03-25', 0, '2020-04-01', 359, '2020-04-01', 0, '2020-04-01', 'TRATO DIRECTO', '5418-148-SE20', '2020-04-01', 'EQUIPO DE OXIGENOTERAPIA DE ALTO FLUJO', 40, 'DIAS CORRIDOS', '2020-05-11', '86383300-0', 'MEDIPLEX S.A.', '36-2020', '2020-04-15', '2020-04-17', '2020-04-17', 'NO', '2020-04-17', '24', '2020-04-17', '2022-04-17', 2, 'ANUAL', 'FACTURA 114921', '2020-04-15', 'VANESSA JIMENEZ VERSACHE  ', 'JUAN RETTING LEDERYS', 'CAMILA CAMARRO EVERTYSKY', 'RAQUEL CAMARRO EVERTYSKY', 'TOMAS CAMARRO EVERTYSKY', 'LEONARDO TELLEZ TROMVIKS', 'TAMARA CAMARRO EVERTYSKY', 'HELEN CAMARRO EVERTYSKY', '1', '2', '3', '4', '5', '6', '1', '8', '9', '10', '123322, 22443335, 3235532', 1, 265);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rrhh`
+-- Table structure for table `rrhh`
 --
 
 CREATE TABLE `rrhh` (
@@ -2479,18 +3156,17 @@ CREATE TABLE `rrhh` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `rrhh`
+-- Dumping data for table `rrhh`
 --
 
 INSERT INTO `rrhh` (`id_rrhh`, `dep_subdepto`, `unid_especifica`, `nombre`, `apellido_paterno`, `apellido_materno`, `rut`, `calidad`, `escalafon`, `grado`, `estudio_titulo`, `tipo_contrato`, `ano_ingreso`, `correo`, `domicilio`, `fono_contacto`, `fecha_nacimiento`, `edad`, `enfermedad_cronica`, `estado_civil`) VALUES
 (15, 'OPERACIONES', 'EQ INDUSTRIALES', 'ALVERTO', 'FIGUEROA', 'TERRA', '19.445.233', 'HONORARIO', 'TECNICO', 2, '3', 'INDEFINIDO', 1997, '34q@EE.CL', 'F', '323423', '1997-04-16', 26, '3', 'VIUDO'),
-(17, 'OPERACIONES', 'REDES ELECTRICAS', 'Arturo', 'Lopez', 'Guajardo', '19.554.541', 'SUPLENCIA', 'TECNICO', 5, 'A', 'INDEFINIDO', 2015, '1@77yt.cl', 'Losa', '126525656', '1920-02-15', 103, 'no', 'SOLTERO'),
-(18, 'PROYECTOS', 'GASES CLINICOS', 'Alexa Daria', 'Quepler', 'Doller', '19.333.222', 'SUPLENCIA', 'TECNICO', 7, 'Medico', 'ANUAL', 2023, 'Doller.Alexa@gmail.com', 'Los MTS #2', '94551112', '1968-05-23', 55, 'No', 'CASADA');
+(17, 'OPERACIONES', 'REDES ELECTRICAS', 'Arturo', 'Lopez', 'Guajardo', '19.554.541', 'SUPLENCIA', 'TECNICO', 5, 'A', 'INDEFINIDO', 2015, '1@77yt.cl', 'Losa', '126525656', '1920-02-15', 103, 'no', 'SOLTERO');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Table structure for table `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -2502,150 +3178,161 @@ CREATE TABLE `usuarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Volcado de datos para la tabla `usuarios`
+-- Dumping data for table `usuarios`
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre`, `correo`, `contrasena`, `tipo_usuario`) VALUES
-(33, 'Usuario', 'usuario@pruebas.cl', '$2y$12$fQg1/n1C4Oc0pJ/RqkEKgONGYHQrlERa0G28cOT9gL8ro/ZnvsV/S', 'ADMINISTRADOR'),
-(35, 'Usuario #2', 'usuario2@test.cl', '$2y$12$HW9i5Z.VCORToqqvfl4Z.OgdjgnfB8pTvtaL27ugWmH9vEKO3r7VC', 'TECNICOS');
+(35, 'Usuario', 'usuario@pruebas.cl', '$2y$12$PireMrMglNdS50OH2DIqSOoKJLN7i.bX4n8zQQT.9Lue6J8blAJDu', 'ADMINISTRADOR');
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `cod_manager`
+-- Indexes for table `cod_manager`
 --
 ALTER TABLE `cod_manager`
   ADD PRIMARY KEY (`id_cod_manager`);
 
 --
--- Indices de la tabla `control_convenio`
+-- Indexes for table `control_convenio`
 --
 ALTER TABLE `control_convenio`
   ADD PRIMARY KEY (`id_control_convenio`),
   ADD KEY `id_mantenciones_relacion` (`id_control_convenio_relacion`);
 
 --
--- Indices de la tabla `equipamiento`
+-- Indexes for table `convenios`
+--
+ALTER TABLE `convenios`
+  ADD PRIMARY KEY (`id_convenio`);
+
+--
+-- Indexes for table `equipamiento`
 --
 ALTER TABLE `equipamiento`
   ADD PRIMARY KEY (`id_relacion`);
 
 --
--- Indices de la tabla `extintores`
+-- Indexes for table `extintores`
 --
 ALTER TABLE `extintores`
   ADD PRIMARY KEY (`id_extintor`);
 
 --
--- Indices de la tabla `mantenciones`
+-- Indexes for table `mantenciones`
 --
 ALTER TABLE `mantenciones`
   ADD PRIMARY KEY (`id_mantenciones`),
   ADD KEY `id_mantenciones_relacion` (`id_mantenciones_relacion`);
 
 --
--- Indices de la tabla `proceso_peticiones`
+-- Indexes for table `proceso_peticiones`
 --
 ALTER TABLE `proceso_peticiones`
   ADD PRIMARY KEY (`id_peticiones`);
 
 --
--- Indices de la tabla `recepcion`
+-- Indexes for table `recepcion`
 --
 ALTER TABLE `recepcion`
   ADD PRIMARY KEY (`id_recepcion`),
   ADD KEY `relacion_id` (`relacion_id`);
 
 --
--- Indices de la tabla `rrhh`
+-- Indexes for table `rrhh`
 --
 ALTER TABLE `rrhh`
   ADD PRIMARY KEY (`id_rrhh`);
 
 --
--- Indices de la tabla `usuarios`
+-- Indexes for table `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id_usuario`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `cod_manager`
+-- AUTO_INCREMENT for table `cod_manager`
 --
 ALTER TABLE `cod_manager`
   MODIFY `id_cod_manager` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1694;
 
 --
--- AUTO_INCREMENT de la tabla `control_convenio`
+-- AUTO_INCREMENT for table `control_convenio`
 --
 ALTER TABLE `control_convenio`
-  MODIFY `id_control_convenio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
+  MODIFY `id_control_convenio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 
 --
--- AUTO_INCREMENT de la tabla `equipamiento`
+-- AUTO_INCREMENT for table `convenios`
+--
+ALTER TABLE `convenios`
+  MODIFY `id_convenio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+
+--
+-- AUTO_INCREMENT for table `equipamiento`
 --
 ALTER TABLE `equipamiento`
-  MODIFY `id_relacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=778;
+  MODIFY `id_relacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=774;
 
 --
--- AUTO_INCREMENT de la tabla `extintores`
+-- AUTO_INCREMENT for table `extintores`
 --
 ALTER TABLE `extintores`
-  MODIFY `id_extintor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_extintor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
--- AUTO_INCREMENT de la tabla `mantenciones`
+-- AUTO_INCREMENT for table `mantenciones`
 --
 ALTER TABLE `mantenciones`
-  MODIFY `id_mantenciones` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `id_mantenciones` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
--- AUTO_INCREMENT de la tabla `proceso_peticiones`
+-- AUTO_INCREMENT for table `proceso_peticiones`
 --
 ALTER TABLE `proceso_peticiones`
-  MODIFY `id_peticiones` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
+  MODIFY `id_peticiones` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
--- AUTO_INCREMENT de la tabla `recepcion`
+-- AUTO_INCREMENT for table `recepcion`
 --
 ALTER TABLE `recepcion`
-  MODIFY `id_recepcion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_recepcion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
--- AUTO_INCREMENT de la tabla `rrhh`
+-- AUTO_INCREMENT for table `rrhh`
 --
 ALTER TABLE `rrhh`
-  MODIFY `id_rrhh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_rrhh` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
   MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `control_convenio`
+-- Constraints for table `control_convenio`
 --
 ALTER TABLE `control_convenio`
   ADD CONSTRAINT `control_convenio_ibfk_1` FOREIGN KEY (`id_control_convenio_relacion`) REFERENCES `equipamiento` (`id_relacion`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Filtros para la tabla `mantenciones`
+-- Constraints for table `mantenciones`
 --
 ALTER TABLE `mantenciones`
   ADD CONSTRAINT `mantenciones_ibfk_1` FOREIGN KEY (`id_mantenciones_relacion`) REFERENCES `equipamiento` (`id_relacion`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Filtros para la tabla `recepcion`
+-- Constraints for table `recepcion`
 --
 ALTER TABLE `recepcion`
   ADD CONSTRAINT `recepcion_ibfk_1` FOREIGN KEY (`relacion_id`) REFERENCES `equipamiento` (`id_relacion`) ON DELETE NO ACTION ON UPDATE NO ACTION;
